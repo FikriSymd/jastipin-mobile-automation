@@ -81,13 +81,6 @@ class ProductEditorScreen {
 
     @Keyword
     static void verifyNotice(String expected) {
-        // Tulisan konfirmasi ada di bawah deretan foto, sementara pengguliran
-        // berhenti begitu tombol Hapus baru saja terlihat di tepi bawah layar.
-        // Akibatnya tulisannya bisa berada di luar layar walau sudah ada di
-        // pohon elemen. Digeser dulu, kalau tidak pemeriksaan gagal tanpa sebab
-        // yang jelas.
-        MobileActions.scrollToOrFail(findTestObject('Jastipin/Editor/tvProductNotice'),
-                12, 'tulisan konfirmasi editor')
         Mobile.verifyElementText(findTestObject('Jastipin/Editor/tvProductNotice'), expected)
     }
 

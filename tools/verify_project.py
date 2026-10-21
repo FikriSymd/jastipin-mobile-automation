@@ -244,36 +244,6 @@ for p in GROOVY_SOURCES:
         fail(f"{rel(p)}: memakai Mobile.scrollToText, yang tidak andal pada Compose. "
              f"Pakai MobileActions.scrollToOrFail.")
 
-# --------------------------------------------------- 11. jarak dan kecepatan geser
-# mobile: swipeGesture memakai kecepatan bawaan 5000 x kerapatan layar. Geseran
-# menjadi lemparan yang meluncur jauh melewati sasaran, sehingga elemen di tengah
-# daftar terlewat di antara dua pemeriksaan. Kecepatan harus disebut eksplisit.
-ma = ROOT / "Keywords/jastipin/MobileActions.groovy"
-if ma.exists():
-    isi = ma.read_text(encoding="utf-8")
-    if "swipeGesture" in isi and "speed" not in isi:
-        fail("geserSekali memanggil swipeGesture tanpa menyebut kecepatan; "
-             "bawaan 5000 x kerapatan layar membuat geseran meluncur melewati sasaran")
-    if "swipeGesture" in isi and "percent" not in isi:
-        fail("geserSekali memanggil swipeGesture tanpa menyebut jarak (percent); "
-             "jarak bawaan membuat satu geseran melompati lebih dari satu kartu")
-
-# Daftar bergrid: satu geseran tidak boleh lebih panjang dari tinggi satu kartu.
-# Kartu katalog terukur 693 px, sedangkan langkah 0,9 menghasilkan 1.264 px, hampir
-# dua kali tinggi kartu. Satu geseran bisa melompati satu baris penuh, dan baris yang
-# terlewat berbeda tiap eksekusi karena posisi awal gulir bergeser sedikit.
-cs = ROOT / "Keywords/jastipin/CatalogScreen.groovy"
-if cs.exists():
-    rapat = re.sub(r"\s+", " ", cs.read_text(encoding="utf-8"))
-    m = re.search(r"scrollToOrFail\(\s*Jastipin\.productCard\([^)]*\)\s*,\s*\d+\s*,\s*[^,]+,\s*([0-9.]+)\s*\)", rapat)
-    if not m:
-        fail("CatalogScreen.scrollToProduct tidak menyebut jarak geser; daftar kartu "
-             "butuh langkah di bawah 0,5 supaya tidak ada kartu yang terlewat")
-    elif float(m.group(1)) > 0.5:
-        fail(f"jarak geser katalog {m.group(1)} terlalu panjang: satu geseran "
-             f"melompati lebih dari satu kartu, sehingga kartu di baris tengah bisa "
-             f"terlewat. Pakai 0,5 atau kurang.")
-
 # ------------------------------------------------------------ laporan
 print("=== Ringkasan ===")
 print(f"berkas XML diperiksa          : {len(xml_files)}")

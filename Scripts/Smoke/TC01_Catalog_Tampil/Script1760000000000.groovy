@@ -29,10 +29,6 @@ List<String> semuaBarang = [
 ]
 
 for (String id : semuaBarang) {
-    // Barang yang sedang dicari ditulis ke log. Kalau eksekusi gagal, log
-    // langsung menunjukkan barang terakhir yang belum ketemu, tanpa perlu
-    // menebak dari urutan.
-    Mobile.comment('Mencari kartu barang: ' + id)
     CatalogScreen.scrollToProduct(id)
 
     // Nama diperiksa hanya untuk barang yang teksnya sudah ada sebagai variabel

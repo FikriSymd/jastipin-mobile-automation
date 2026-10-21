@@ -32,23 +32,10 @@ class CatalogScreen {
         Mobile.tap(findTestObject('Jastipin/Catalog/btnOpenAdmin'), GlobalVariable.G_Timeout)
     }
 
-    /**
-     * Menggulir sampai kartu barangnya terlihat.
-     *
-     * Yang dicari kartunya, bukan tulisan namanya. Kartu tingginya 693 px,
-     * sedangkan tulisan nama ada di bagian bawah kartu dan hanya setinggi
-     * sekitar 35 px. Saat kartu baru masuk layar, bagian atasnya yang terlihat
-     * lebih dulu, sehingga tulisan namanya masih di luar layar walau kartunya
-     * sudah tampak. Menggulir berdasarkan kartu membuat patokannya stabil.
-     *
-     * Jarak geser 0,25 dipilih karena hasilnya 351 px, lebih pendek dari tinggi
-     * satu kartu. Dengan langkah sependek itu tidak ada kartu yang bisa
-     * terlewat. Batas geser dinaikkan karena tiap geseran jadi lebih pendek.
-     */
     @Keyword
     static void scrollToProduct(String productId) {
-        MobileActions.scrollToOrFail(Jastipin.productCard(productId),
-                20, 'kartu barang ' + productId, 0.25)
+        MobileActions.scrollToOrFail(Jastipin.productName(productId),
+                12, 'kartu barang ' + productId)
     }
 
     @Keyword

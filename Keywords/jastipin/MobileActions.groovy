@@ -199,19 +199,6 @@ class MobileActions {
      */
     @Keyword
     static boolean scrollTo(TestObject to, int maxGeser) {
-        return scrollTo(to, maxGeser, 0.9)
-    }
-
-    /**
-     * Sama seperti di atas, tapi jarak tiap geseran bisa diatur.
-     *
-     * Jaraknya penting saat sasarannya sebuah kartu di dalam daftar bergrid.
-     * Satu geseran tidak boleh lebih panjang dari tinggi satu kartu, kalau tidak
-     * kartu di baris tengah bisa terlewat di antara dua pemeriksaan. Bawaannya
-     * 0,9 dipertahankan supaya pemanggil lama tidak berubah perilakunya.
-     */
-    @Keyword
-    static boolean scrollTo(TestObject to, int maxGeser, double langkah) {
         // Papan ketik ditutup lebih dulu. Kalau tidak, geseran yang jatuh di
         // area papan ketik tidak menggulir apa pun, dan form yang termampatkan
         // membuat elemen yang sebenarnya ada jadi tidak terlihat.
@@ -220,7 +207,7 @@ class MobileActions {
             return true
         }
         for (String arah : ['up', 'down']) {
-            if (geserSampaiKetemu(to, maxGeser, arah, langkah)) {
+            if (geserSampaiKetemu(to, maxGeser, arah)) {
                 KeywordUtil.logInfo('Elemen terlihat setelah geser ke arah ' + arah)
                 return true
             }
@@ -236,17 +223,13 @@ class MobileActions {
      * tombol di bawah form tidak pernah tercapai, dan form yang termampatkan
      * membuat elemen yang sebenarnya ada jadi tidak terlihat.
      *
-     * Aman dipanggil walau papan ketiknya tidak sedang tampil. Tidak ada jeda
-     * sesudahnya: pemeriksaan keterlihatan berikutnya yang menunggu sampai tata
-     * letaknya kembali penuh.
+     * Aman dipanggil walau papan ketiknya tidak sedang tampil. Ada jeda sesudahnya
+     * supaya tata letaknya sempat kembali penuh sebelum diperiksa.
      */
     private static void sembunyikanPapanKetik() {
         try {
-            // Tanpa jeda. Pemeriksaan keterlihatan sesudahnya sudah menunggu
-            // sampai dua detik, jadi tata letak yang kembali penuh terserap di
-            // situ. Jeda tetap di sini dulu membuat setiap pengguliran membayar
-            // satu detik walau papan ketiknya tidak sedang tampil.
             Mobile.hideKeyboard(FailureHandling.OPTIONAL)
+            Mobile.delay(1)
         } catch (Throwable ignored) {
         }
     }
@@ -273,11 +256,11 @@ class MobileActions {
         }
     }
 
-    private static boolean geserSampaiKetemu(TestObject to, int maxGeser, String arah, double langkah) {
+    private static boolean geserSampaiKetemu(TestObject to, int maxGeser, String arah) {
         int w = Mobile.getDeviceWidth()
         int h = Mobile.getDeviceHeight()
         for (int i = 0; i < maxGeser; i++) {
-            geserSekali(w, h, arah, langkah)
+            geserSekali(w, h, arah)
             Mobile.delay(1)
             if (terlihat(to, 2)) {
                 return true
@@ -296,7 +279,7 @@ class MobileActions {
      * terhadap titik awal di catatan berikutnya, jadi nilainya tidak pasti dan
      * hanya dipakai sebagai cadangan.
      */
-    private static void geserSekali(int w, int h, String arah, double langkah) {
+    private static void geserSekali(int w, int h, String arah) {
         try {
             Object[] params = new Object[1]
             params[0] = [
@@ -305,15 +288,7 @@ class MobileActions {
                     width    : (int) (w * 0.8),
                     height   : (int) (h * 0.6),
                     direction: arah,
-                    // Jarak geser = langkah x tinggi kotak batas di atas, yaitu
-                    // langkah x 1.404 px di perangkat ini. Pemanggil yang
-                    // menghadapi daftar bergrid harus mengirim angka di bawah 0,5
-                    // supaya satu geseran tidak melompati lebih dari satu kartu.
-                    percent  : langkah,
-                    // Kecepatan wajib diisi. Bawaannya 5000 x kerapatan layar, yaitu
-                    // sekitar 13.750 px per detik di perangkat ini, sehingga geseran
-                    // berubah menjadi lemparan yang meluncur jauh melewati sasaran.
-                    speed    : 1000
+                    percent  : 0.9
             ]
             MobileDriverFactory.getDriver().executeScript('mobile: swipeGesture', params)
             return
@@ -337,12 +312,7 @@ class MobileActions {
      */
     @Keyword
     static void scrollToOrFail(TestObject to, int maxGeser, String keterangan) {
-        scrollToOrFail(to, maxGeser, keterangan, 0.9)
-    }
-
-    @Keyword
-    static void scrollToOrFail(TestObject to, int maxGeser, String keterangan, double langkah) {
-        if (scrollTo(to, maxGeser, langkah)) {
+        if (scrollTo(to, maxGeser)) {
             return
         }
         boolean adaDiPohon = Mobile.waitForElementPresent(to, 1, FailureHandling.OPTIONAL)

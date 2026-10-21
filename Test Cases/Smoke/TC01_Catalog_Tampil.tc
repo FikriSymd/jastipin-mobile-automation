@@ -3,8 +3,24 @@
    <description>Katalog terbaca penuh dari atas sampai bawah.</description>
    <name>TC01_Catalog_Tampil</name>
    <tag></tag>
-   <comment>Given aplikasi Jastipin baru dibuka
-When katalog dimuat lalu digulir sampai dasar
+   <integratedEntity>
+      <productName>TESTOPS</productName>
+      <properties>
+         <entry>
+            <key>lastModifiedByName</key>
+            <value>Fikri</value>
+         </entry>
+         <entry>
+            <key>lastModifiedByUuid</key>
+            <value>3ec06e12-63bf-4dc9-8290-c2a5dfd21810</value>
+         </entry>
+      </properties>
+      <type>TESTCASE</type>
+   </integratedEntity>
+   <comment>Given aplikasi Jastipin baru dibuka&#xd;
+When katalog dimuat lalu digulir sampai dasar&#xd;
 Then kalimat hero terisi, seluruh delapan barang bawaan terpasang berurutan, dan blok cara pesan, kontak, catatan kaki, serta tombol masuk admin tercapai</comment>
+   <origin>MOBILE_RECORDER</origin>
+   <recordOption>OTHER</recordOption>
    <testCaseGuid>acff6d2b-45f6-54f9-98f5-7060aa5b135e</testCaseGuid>
 </TestCaseEntity>

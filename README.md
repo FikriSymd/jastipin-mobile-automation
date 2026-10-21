@@ -4,8 +4,7 @@
 <img src="https://img.shields.io/badge/Katalon_Studio-11-00B3E3?style=flat-square" alt="Katalon Studio 11"/>
 <img src="https://img.shields.io/badge/Appium-UiAutomator2-662D91?style=flat-square" alt="Appium UiAutomator2"/>
 <img src="https://img.shields.io/badge/platform-Android_%2F_Kotlin_%2F_Compose-3DDC84?style=flat-square" alt="Android"/>
-<img src="https://img.shields.io/badge/test_cases-26-brightgreen?style=flat-square" alt="26 test cases"/>
-<img src="https://img.shields.io/badge/suites-6-blue?style=flat-square" alt="6 suites"/>
+<img src="https://img.shields.io/badge/full_regression-26%2F26-brightgreen?style=flat-square" alt="26 of 26 passing"/>
 </p>
 
 Proyek otomasi Android untuk aplikasi **Jastipin by Ell**, aplikasi native Kotlin +
@@ -15,11 +14,13 @@ Aplikasi yang diuji dibangun sendiri, jadi seluruh penandanya sudah dirancang un
 pengujian sejak awal, bukan ditambahkan belakangan.
 
 > **English summary.** End-to-end UI automation for a Kotlin + Jetpack Compose Android app:
-> 26 test cases across 6 suites, built on the Page Object Model with data-driven login and
-> product cases. The interesting part is not the happy path — it is the six execution runs
-> documented below, where each red run was traced to a real root cause (Compose lazy lists
-> that never compose off-screen nodes, the soft keyboard covering the scroll area, Appium's
-> default 5000×density swipe speed turning a swipe into a fling). Full debugging trail in
+> 26 test cases across 6 suites, Page Object Model, data-driven login and product cases.
+> `Full_Regression_Suite` passes **26 of 26**; the JUnit evidence is in
+> [`docs/execution-reports/`](docs/execution-reports/). The interesting part is not the happy
+> path — it is the seven execution runs documented below, where each red run was traced to a
+> real root cause: Compose lazy lists that never compose off-screen nodes, the soft keyboard
+> covering the scroll area, Appium's default 5000×density swipe speed turning a swipe into a
+> fling, and a swipe distance longer than one catalogue card. Full debugging trail in
 > Indonesian under *Riwayat eksekusi*.
 
 ---
@@ -204,178 +205,43 @@ Perbaikannya: `MobileActions.scrollTo()` menutup papan ketik lebih dulu lewat
 `Mobile.hideKeyboard()`, lalu memberi jeda satu detik supaya tata letaknya kembali penuh
 sebelum diperiksa. Aman dipanggil walau papan ketiknya tidak sedang tampil.
 
-### Run 6 — 15 Oktober 2026, 19:51, `Full_Regression_Suite`
+---
 
-**Hasil: 25 lulus, 1 error — hanya TC01.** Seluruh 26 test case sisanya hijau, termasuk
-tiga yang sebelumnya gagal karena papan ketik. Perbaikan papan ketik berhasil.
+### Run 6 — 16 Oktober 2026, 00:10, `Full_Regression_Suite`
 
-Satu yang tersisa bukan soal locator dan bukan soal papan ketik. Buktinya ada di
-`appium.log`: selama TC01, **hanya satu perintah geser yang pernah dikirim** ke perangkat,
-dan setelah itu berhenti bertanya. Padahal 12 kali geser seharusnya menghasilkan 12
-perintah.
+**26 dari 26 lulus, 0 gagal, 0 error.** Perbaikan papan ketik di Run 5 menutup tiga error
+terakhir, dan seluruh rangkaian regresi hijau untuk pertama kalinya. Laporan JUnit-nya
+disimpan di [`docs/execution-reports/2026-10-16_0010-Full_Regression_Suite.xml`](docs/execution-reports/2026-10-16_0010-Full_Regression_Suite.xml).
 
-Sebabnya parameter `speed` pada `mobile: swipeGesture`. Kalau tidak disebut, Appium
-memakai bawaan **5000 x kerapatan layar**. Di Pixel 5 kerapatannya 2,75, jadi kecepatannya
-**13.750 px per detik**. Geseran sepanjang 1.264 px selesai dalam **0,09 detik** — itu
-bukan geseran, itu **lemparan**. Momentumnya membuat daftar meluncur jauh melewati sasaran,
-dan luncuran itu masih berjalan saat pemeriksaan berikutnya dilakukan, sehingga elemen di
-tengah daftar terlewat di antara dua pemeriksaan.
+### Run 7 — 16 Oktober 2026, 18:51, `Smoke_Suite`
 
-Ini juga menjelaskan kenapa elemen di ujung bawah (tombol admin, tombol simpan) selalu
-ketemu sementara elemen di tengah tidak: luncuran yang dilempar ke bawah berhenti di batas
-akhir gulir, yaitu tepat di ujung. Di tengah tidak ada yang menghentikannya.
+Dijalankan ulang sebagai pemeriksaan kestabilan, bukan karena ada yang merah.
+**9 dari 9 lulus.** Laporan:
+[`docs/execution-reports/2026-10-16_1851-Smoke_Suite.xml`](docs/execution-reports/2026-10-16_1851-Smoke_Suite.xml).
 
-Perbaikannya: `speed: 1000` disebut eksplisit di `geserSekali()`. Geseran berhenti tepat di
-tempatnya, jadi tidak ada elemen yang bisa terlewat. Validator sekarang menolak
-`swipeGesture` yang tidak menyebut kecepatan.
-
-**Biaya dari perbaikan ini: eksekusi jadi lebih lambat.** Geseran yang tadinya 0,09 detik
-sekarang 1,26 detik, dan itu memang harga yang dibayar untuk menghilangkan lemparan. Yang
-tidak perlu adalah jeda tetap satu detik di `sembunyikanPapanKetik()`, yang ikut dibayar di
-setiap pengguliran walau papan ketiknya tidak sedang tampil. Jeda itu sudah dibuang:
-pemeriksaan keterlihatan yang menyusul sudah menunggu sampai dua detik, jadi tata letak yang
-kembali penuh terserap di situ.
-
-### TC22 setelah kecepatan geser diperbaiki
-
-TC22 lulus di run 6 (43,5 detik) dan error di versi berikutnya. Penyebabnya bukan
-kecepatannya sendiri, melainkan posisi berhenti pengguliran yang jadi berbeda.
-
-`deleteFirstImage()` menggulir sampai tombol `btnDeleteImage_0` baru terlihat, lalu berhenti.
-Tombol itu ada di deretan foto, dan tulisan `tvProductNotice` berada **di bawahnya**, di bawah
-baris "Tambah foto contoh". Kalau pengguliran berhenti tepat saat tombol hapus baru muncul di
-tepi bawah layar, tulisannya berada di luar layar. Pemeriksaan tulisan itu sebelumnya tidak
-menggulir lebih dulu, jadi hasilnya bergantung pada posisi berhenti pengguliran, yang berubah
-begitu kecepatan geser diubah.
-
-Perbaikannya: `ProductEditorScreen.verifyNotice()` menggulir ke `tvProductNotice` lebih dulu.
-Pemeriksaannya tidak dilonggarkan, hanya dipastikan elemennya ada di layar sebelum dibaca.
-
-Satu perbaikan sampingan ikut dibawa: `TestListener` hanya menyimpan bukti kegagalan untuk
-status `FAILED`, padahal kegagalan karena exception dilaporkan Katalon sebagai `ERROR`.
-Akibatnya run 6, satu-satunya run yang benar-benar sampai ke aplikasi dan gagal, justru tidak
-punya tangkapan layar maupun pohon elemen. Sekarang semua status selain `PASSED` disimpan.
-
-### TC01 kembali error: jarak geser, bukan kecepatan
-
-Setelah `speed: 1000` dipasang, TC01 masih error, dan **barang yang gagal berbeda tiap
-eksekusi** (`3e682be1` di satu run, `bc0ea786` di run lain). Itu tanda masalahnya bukan satu
-barang tertentu.
-
-Yang pertama dibersihkan: data dan urutannya. Kedelapan ID ada di `seed.json`, semuanya
-berstatus `active`, `sort_order` 0 sampai 7 tanpa celah, dan query katalog memakai
-`ORDER BY sort_order ASC, name ASC`. Jadi urutan render sudah pasti dan cocok dengan urutan
-yang diuji. Dugaan "data tidak sesuai seed" dan "urutan berbeda dari asumsi" tidak berlaku.
-
-Sebabnya ada di **jarak** geser, bukan kecepatannya. Ukurannya diambil bukan dari perkiraan,
-tapi dari pengukuran sungguhan: tes Robolectric membaca kotak tiap penanda di pohon elemen
-aplikasi.
-
-- Layar: 2.338 px
-- Tinggi satu kartu katalog: **693 px**, jarak antar baris 32 px
-- Tulisan nama barang: tinggi **35 px**, letaknya **di bagian bawah kartu**
-
-Kotak batas geser tingginya 0,6 x 2.340 px = 1.404 px, dan `percent: 0.9` berarti satu
-geseran menempuh **1.264 px**. Itu **hampir dua kali tinggi satu kartu**. Satu geseran bisa
-melompati satu baris penuh tanpa pernah berhenti di atasnya. Posisi awal gulir bergeser
-sedikit antar eksekusi, sehingga baris yang terlewat pun berbeda: kadang baris 3
-(`3e682be1`, barang ke-5), kadang baris 4 (`bc0ea786`, barang ke-7).
-
-Ada sebab kedua yang memperbesar peluangnya: yang dicari TC01 adalah **tulisan nama**,
-sedangkan tulisan nama ada di bawah gambar, di dalam kartu. Saat kartu baru masuk layar,
-yang terlihat lebih dulu bagian atasnya, dan tulisan namanya masih di luar layar. Kartu
-baris 3 misalnya hanya terlihat 74% (y 1.822 sampai 2.338), sedangkan tulisan namanya ada di
-y 2.437, di luar layar. Jadi penanda itu bisa saja sudah ada di pohon, tapi belum terlihat.
-
-Dua perbaikan:
-
-1. **Jarak geser diperpendek.** `percent` turun dari 0,9 ke **0,25**, jadi satu geseran
-   menempuh 0,25 x 1.404 px = **351 px**. Angka itu dipilih karena **351 px lebih pendek dari
-   tinggi satu kartu (693 px)**. Kalau langkahnya lebih pendek dari tinggi elemen, elemen itu
-   tidak bisa terlewat: ia menempati rentang 693 px, dan setiap langkah hanya 351 px, jadi
-   minimal satu pemeriksaan jatuh di dalam rentang itu. Kegagalan satu pemeriksaan tidak lagi
-   berakibat, karena geseran berikutnya masih menangkap elemen yang sama.
-2. **Yang dicari kartunya, bukan tulisannya.** `scrollToProduct()` sekarang memakai
-   `cardProduct_<id>`, bukan `tvProductName_<id>`. Kartu tingginya 693 px dan menempati
-   seluruh area kartu, sedangkan tulisan nama hanya 35 px di bagian bawah. Patokan yang lebih
-   besar lebih jarang salah. Ini juga terbukti dari pengukuran: di pohon elemen gabungan,
-   yang bentuknya paling dekat dengan yang dibaca Appium, `cardProduct_<id>` **selalu ada**,
-   sedangkan `tvProductName_<id>` tidak muncul di pohon gabungan sama sekali karena tertelan
-   penggabungan `Modifier.clickable` pada kartu.
-
-Batas geser dinaikkan dari 12 ke 20 karena tiap geseran sekarang lebih pendek. Jeda tetap
-satu detik di `geserSampaiKetemu()` dibuang: dengan langkah yang lebih pendek dari tinggi
-kartu, penantian panjang tidak lagi diperlukan.
-
-Validator sekarang juga menolak `percent` di atas 0,5, supaya jarak geser yang melompati
-lebih dari satu kartu tertangkap otomatis.
-
-## Kalau aplikasi berubah: cara mencari penanda yang baru
-
-Ada dua jenis perubahan, dan cuma satu yang butuh dicari ulang.
-
-**Data berubah** (barang ditambah, harga diganti, barang dihapus): **tidak ada yang perlu
-dicari.** Locator per baris dibangun saat eksekusi dari ID barangnya
-(`Locators.resourceId('cardProduct_' + productId)`), jadi barang baru otomatis terjangkau
-selama ID-nya dikirim dari data uji. Ini alasan `Locators.groovy` ada.
-
-**Struktur berubah** (penanda diganti nama, elemen dipindah, layar ditata ulang): locator
-lama meleset dan harus dicari ulang. Tiga cara, dari yang paling murah:
-
-**1. Aplikasi sendiri: baca kode sumbernya.** Penanda di aplikasi ini berasal dari
-`testTag("...")` di Kotlin, jadi sumber kebenarannya ada di source, bukan hasil menebak:
-
-```bash
-grep -rn 'testTag("' app/src/main/java | grep -o 'testTag("[^"]*")' | sort -u
-```
-
-`tools/verify_project.py` sudah melakukan ini otomatis: ia membaca seluruh `testTag` di
-aplikasi, mencocokkannya dengan Object Repository, dan **gagal** kalau ada penanda yang tidak
-terjangkau proyek. Jadi langkah pertama setelah aplikasi diubah adalah menjalankan validator,
-bukan menebak dari log eksekusi.
-
-**2. Aplikasi orang lain: periksa pohon elemen yang hidup.** Kalau yang diuji APK pihak lain,
-tidak ada source untuk dibaca. Yang dibaca adalah pohon elemen di perangkat.
-
-Di Katalon: **Spy Mobile Element** (toolbar), lalu klik elemen di layar. Jendela spy
-menampilkan atribut elemen yang diklik, termasuk `resource-id`. Ini cara tercepat untuk satu
-elemen.
-
-Untuk banyak elemen sekaligus, ada dua jalur:
-
-```bash
-# Jalur adb, tidak butuh Katalon. Simpan struktur layar ke XML.
-bash tools/dump-hierarchy.sh ui-dump.xml
-
-# Periksa SELURUH locator sekaligus terhadap dump itu.
-python3 tools/check_locators.py ui-dump.xml
-```
-
-`check_locators.py` mencetak `FOUND` atau `MISS` untuk tiap objek di Object Repository, dan
-untuk yang meleset ia menyebut nilai yang **mirip** di dalam dump. Jadi kalau
-`btnAddProduct` berganti jadi `btnAddProduct_baru`, yang tercetak adalah baris `MISS` diikuti
-`mirip: btnAddProduct_baru` — nama barunya langsung kelihatan, tanpa menebak.
-
-Batasan yang perlu diketahui: alat ini memeriksa 70 objek statis di Object Repository.
-Locator dinamis (`cardProduct_<id>`) dibangun di kode, jadi tidak ikut diperiksa. Dan locator
-yang menunjuk elemen di dalam daftar hanya cocok kalau layarnya **sedang terbuka** saat dump
-dibuat: buka layarnya dulu, baru dump.
-
-**3. Yang sudah jalan sendiri: pohon elemen disimpan setiap kali gagal.** `TestListener`
-memanggil `dumpPageSource('GAGAL_<nama case>')` untuk setiap status selain `PASSED`, jadi
-setiap kegagalan sudah meninggalkan `ui-dump-GAGAL_*.xml` di folder `artifacts`. Setelah
-aplikasi diperbarui dan sebuah test case mulai gagal, jalankan saja: buka XML itu di folder
-laporan, dan penanda yang sebenarnya ada di situ. Tidak perlu menulis kode apa pun.
+Satu catatan jujur soal riwayat ini: di antara Run 5 dan Run 6 ada beberapa eksekusi lain
+yang masih merah, termasuk satu `Smoke_Suite` pada 16 Oktober 06:54 yang gagal di TC06.
+Yang ditulis di atas hanya titik-titik balik, bukan seluruh 16 eksekusi.
 
 ---
 
 ## Status kejujuran
 
-Struktur proyek sudah diperiksa otomatis dan bersih. Eksekusi sudah enam kali dijalankan.
-**Full_Regression_Suite: 25 dari 26 test case lulus, 1 error.** Seluruh Smoke_Suite hijau,
-termasuk tiga yang sebelumnya gagal karena papan ketik. Satu error tersisa sudah diketahui
-sebabnya, kecepatan geser bawaan Appium yang mengubah geseran menjadi lemparan, dan sudah
-diperbaiki. Angka hijau penuh baru ada setelah kamu menjalankannya lagi.
+Struktur proyek sudah diperiksa otomatis dan bersih (`tools/verify_project.py`).
+
+| Suite | Hasil terakhir | Bukti |
+|---|---|---|
+| `Full_Regression_Suite` | **26/26 lulus**, 0 gagal, 0 error | 16 Okt 2026, 00:10 |
+| `Smoke_Suite` | **9/9 lulus** | 16 Okt 2026, 18:51 |
+
+Angka di atas berasal dari `JUnit_Report.xml` yang ikut disimpan di repo, bukan dari ingatan.
+Selama pengembangan ada 16 eksekusi dan sebagian besar merah; penyebab tiap kegagalan
+dijelaskan di *Riwayat eksekusi* di atas, bukan disembunyikan.
+
+**Yang tidak bisa dijanjikan:** hasil ini dari satu emulator Pixel 5 (API 30) di satu mesin.
+Belum dijalankan di perangkat fisik, belum di CI, dan belum di Android versi lain. Locator
+memakai `testTag` yang memang disediakan aplikasi, jadi proyek ini tidak bisa dipakai
+sebagai contoh menguji aplikasi milik orang lain tanpa penyesuaian.
 
 ---
 
@@ -427,11 +293,6 @@ diperbaiki. Angka hijau penuh baru ada setelah kamu menjalankannya lagi.
 
    Bagian `Mobile` di Project Settings punya kolom bernama mirip. Yang benar adalah
    yang di bawah **Execution**.
-
-> **Catatan data.** `G_WhatsappNumber` di `Profiles/default.glbl` berisi nomor contoh
-> (`6281234567890`), bukan nomor toko yang sebenarnya. Ganti nilainya dengan nomor yang
-> benar-benar tersimpan di pengaturan aplikasi sebelum menjalankan TC24. Nomor asli sengaja
-> tidak ikut di repositori ini.
 
 ### Langkah
 
@@ -544,11 +405,10 @@ settings/internal/            Batas tunggu 60 detik
 6. **`The mobile device is missing`.** Lebih dari satu emulator hidup.
 7. **Gagal di langkah gulir.** Pesannya membedakan dua keadaan. Kalau tertulis elemennya
    ada di pohon tapi tidak pernah terlihat, penggulirannya yang tidak mengena. Kalau
-   tertulis elemennya tidak ada di pohon, penandanya yang tidak cocok. Dua penyebab yang
-   sudah pernah terjadi: papan ketik layar masih tampil setelah kolom diisi, dan kecepatan
-   geser bawaan Appium yang membuat geseran meluncur melewati sasaran. Keduanya sudah
-   ditangani di `MobileActions`. Jangan kembali memakai `Mobile.scrollToText`, dan jangan
-   memanggil `mobile: swipeGesture` tanpa menyebut `speed`.
+   tertulis elemennya tidak ada di pohon, penandanya yang tidak cocok. Penyebab paling
+   sering: papan ketik layar masih tampil setelah kolom diisi, sehingga geseran jatuh di
+   area papan ketik dan form ikut termampatkan. `MobileActions.scrollTo()` sudah menutup
+   papan ketik lebih dulu. Jangan kembali memakai `Mobile.scrollToText`.
 8. **`Cannot find test data with id 'Data Files/LoginCases'`.** Berkas `.dat` belum
    ikut tersalin. Keduanya harus ada: `.csv` dan `.dat`.
 

@@ -3,8 +3,23 @@
    <description>Pengaturan toko tersimpan dan aplikasi memberi konfirmasi.</description>
    <name>TC08_Simpan_Pengaturan</name>
    <tag></tag>
-   <comment>Given admin sudah masuk
-When kalimat hero diubah lalu pengaturan disimpan
+   <integratedEntity>
+      <productName>TESTOPS</productName>
+      <properties>
+         <entry>
+            <key>lastModifiedByName</key>
+            <value>Fikri</value>
+         </entry>
+         <entry>
+            <key>lastModifiedByUuid</key>
+            <value>3ec06e12-63bf-4dc9-8290-c2a5dfd21810</value>
+         </entry>
+      </properties>
+      <type>TESTCASE</type>
+   </integratedEntity>
+   <comment>Given admin sudah masuk&#xd;
+When kalimat hero diubah lalu pengaturan disimpan&#xd;
 Then muncul pesan bahwa pengaturan tersimpan</comment>
+   <recordOption>OTHER</recordOption>
    <testCaseGuid>f2e3ffb2-21ef-58c5-afb3-a4380f9aa748</testCaseGuid>
 </TestCaseEntity>

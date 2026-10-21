@@ -17,7 +17,7 @@ AdminHomeScreen.verifyVisible()
 AdminHomeScreen.openSettings()
 SettingsScreen.verifyVisible()
 
-SettingsScreen.typeField('heroLead', 'Belanja titipan dari luar negeri, dikurasi manual.')
+SettingsScreen.typeField('heroLead', 'cek dulu baru checkout')
 SettingsScreen.save()
 SettingsScreen.verifySaved()
 

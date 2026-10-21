@@ -44,9 +44,7 @@ class TestListener {
         String status = testCaseContext.getTestCaseStatus()
         KeywordUtil.logInfo('Test case selesai: ' + testCaseContext.getTestCaseId() + ' status=' + status)
 
-        // Bukan hanya FAILED. Kegagalan karena exception dilaporkan Katalon sebagai
-        // ERROR, dan justru itulah bentuk kegagalan yang paling sering terjadi.
-        if (!'PASSED'.equals(status) && GlobalVariable.G_ScreenshotOnFailure) {
+        if ('FAILED'.equals(status) && GlobalVariable.G_ScreenshotOnFailure) {
             try {
                 String safeName = testCaseContext.getTestCaseId().replace('/', '_').replace(' ', '_')
                 File f = new File(RunConfiguration.getReportFolder(),

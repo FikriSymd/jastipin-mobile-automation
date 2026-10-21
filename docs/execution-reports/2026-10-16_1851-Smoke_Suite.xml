@@ -1,0 +1,1464 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Smoke_Suite" time="360.095" tests="9" passed="9" failures="0" errors="0" incompleted="0" skipped="0">
+   <testsuite name="Smoke_Suite" tests="9" passed="9" failures="0" errors="0" incompleted="0" skipped="0" time="360.095" timestamp="2026-10-16T11:51:51.573Z" hostname="user - user" id="Test Suites/Smoke_Suite" status="PASSED">
+      <properties>
+         <property name="deviceName" value=" (emulator-5554 - sdk_gphone_x86_64 - Android 11)"/>
+         <property name="devicePlatform" value="Android"/>
+         <property name="logFolder" value="C:\\Users\\user\\KatalonProjects\\jastipin-mobile-automation\\Reports\\20261016_185140\\Smoke_Suite\\20261016_185144"/>
+         <property name="logFiles" value="C:\\Users\\user\\KatalonProjects\\jastipin-mobile-automation\\Reports\\20261016_185140\\Smoke_Suite\\20261016_185144\\appium.log, C:\\Users\\user\\KatalonProjects\\jastipin-mobile-automation\\Reports\\20261016_185140\\Smoke_Suite\\20261016_185144\\console0.log, C:\\Users\\user\\KatalonProjects\\jastipin-mobile-automation\\Reports\\20261016_185140\\Smoke_Suite\\20261016_185144\\execution0.log"/>
+         <property name="attachments" value="artifacts\shot-TC01_katalog.png, artifacts\shot-TC03_galeri.png, artifacts\shot-TC05_setelah_tambah.png, artifacts\shot-TC08_pengaturan.png"/>
+         <property name="hostName" value="user - user"/>
+         <property name="os" value="Windows 10 64bit"/>
+         <property name="katalonVersion" value="11.6.0"/>
+         <property name="deviceOS" value="Android"/>
+         <property name="userFullName" value=""/>
+         <property name="deviceId" value="emulator-5554"/>
+         <property name="deviceName" value=" (emulator-5554 - sdk_gphone_x86_64 - Android 11)"/>
+         <property name="deviceOSVersion" value="11"/>
+         <property name="executionBindingVariables" value="[]"/>
+         <property name="deviceModel" value="sdk_gphone_x86_64"/>
+         <property name="hostAddress" value="192.168.56.1"/>
+         <property name="projectName" value="Jastipin Mobile Automation"/>
+         <property name="deviceManufacturer" value="Google"/>
+      </properties>
+      <testcase name="Test Cases/Smoke/TC01_Catalog_Tampil" time="72.878" classname="Test Cases/Smoke/TC01_Catalog_Tampil" status="PASSED">
+         <system-out><![CDATA[16-10-2026T18:51:51 - [TEST_CASE][PASSED] - Test Cases/Smoke/TC01_Catalog_Tampil: Test Cases/Smoke/TC01_Catalog_Tampil
+
+16-10-2026T18:51:52 - [TEST_STEP][PASSED] - Start listener action : beforeTestCase: Delayed 2 second(s)
+
+16-10-2026T18:51:52 - [TEST_STEP][PASSED] - logInfo("Test case dimulai: " + testCaseContext.getTestCaseId()): Test case dimulai: Test Cases/Smoke/TC01_Catalog_Tampil
+
+16-10-2026T18:51:52 - [MESSAGE][INFO] - Test case dimulai: Test Cases/Smoke/TC01_Catalog_Tampil
+
+16-10-2026T18:51:52 - [TEST_STEP][PASSED] - if (G_ResetDataBeforeEachCase): Delayed 2 second(s)
+
+16-10-2026T18:51:52 - [TEST_STEP][PASSED] - MobileActions.resetAndLaunch(): Delayed 2 second(s)
+
+16-10-2026T18:51:52 - [MESSAGE][INFO] - adb dipakai: C:\Users\user\.katalon\tools\android_sdk\platform-tools\adb.exe
+
+16-10-2026T18:51:53 - [MESSAGE][INFO] - pm clear com.fikri.jastipin -> Success
+
+16-10-2026T18:51:53 - [MESSAGE][INFO] - Detected NodeJS location: "C:\Program Files\nodejs\node.exe"
+
+16-10-2026T18:51:58 - [MESSAGE][INFO] - appium log: C:\Users\user\KatalonProjects\jastipin-mobile-automation\Reports\20261016_185140\Smoke_Suite\20261016_185144\appium.log
+
+16-10-2026T18:52:02 - [MESSAGE][INFO] - Appium server started on port 54,549
+
+16-10-2026T18:52:12 - [MESSAGE][WARNING] - Unable to get appium status. Root cause (Cannot invoke "com.google.gson.JsonObject.getAsJsonPrimitive(String)" because the return value of "com.google.gson.JsonObject.getAsJsonObject(String)" is null)
+
+16-10-2026T18:52:13 - [MESSAGE][PASSED] - Starting application with Id: 'com.fikri.jastipin'
+
+16-10-2026T18:52:22 - [MESSAGE][PASSED] - Delayed 2 second(s)
+
+16-10-2026T18:52:22 - [TEST_STEP][PASSED] - comment("TC01_Catalog_Tampil: Katalog terbaca penuh dari atas sampai bawah."): TC01_Catalog_Tampil: Katalog terbaca penuh dari atas sampai bawah.
+
+16-10-2026T18:52:22 - [MESSAGE][INFO] - TC01_Catalog_Tampil: Katalog terbaca penuh dari atas sampai bawah.
+
+16-10-2026T18:52:22 - [TEST_STEP][PASSED] - CatalogScreen.verifyVisible(): Element 'Object Repository/Jastipin/Catalog/scrCatalog' is exist
+
+16-10-2026T18:52:22 - [MESSAGE][PASSED] - Element 'Object Repository/Jastipin/Catalog/scrCatalog' is exist
+
+16-10-2026T18:52:22 - [TEST_STEP][PASSED] - heroLead = getText(findTestObject("Jastipin/Catalog/tvHeroLead"), G_Timeout): Text of element 'Object Repository/Jastipin/Catalog/tvHeroLead' is: '✨ From Your Wishlist to Your Door ✨'
+
+16-10-2026T18:52:22 - [MESSAGE][PASSED] - Text of element 'Object Repository/Jastipin/Catalog/tvHeroLead' is: '✨ From Your Wishlist to Your Door ✨'
+
+16-10-2026T18:52:22 - [TEST_STEP][PASSED] - verifyNotEqual(heroLead, "", STOP_ON_FAILURE): Actual object '✨ From Your Wishlist to Your Door ✨' and expected object '' are not equal
+
+16-10-2026T18:52:22 - [MESSAGE][PASSED] - Actual object '✨ From Your Wishlist to Your Door ✨' and expected object '' are not equal
+
+16-10-2026T18:52:22 - [TEST_STEP][PASSED] - semuaBarang = ["945c758c-8859-4407-819d-12dd9fc464a6", "682cec96-ec80-4f48-9e12-a9f61ea0e12f", "0b899399-15ae-4a31-9ce2-ee6ede624af3", "a44019f2-2869-48ef-be45-0d3893dd236f", "3e682be1-a482-49e6-af95-47e8cbb09c9c", "b28bc7c1-3d25-4b30-93fb-7d3ae4c0eb06", "bc0ea786-496c-4c10-b727-15e207fead16", "94f7f2fe-1296-4f63-85b5-feb0b8072cee"]: null
+
+16-10-2026T18:52:22 - [TEST_STEP][PASSED] - for (String id : semuaBarang): null
+
+16-10-2026T18:52:22 - [TEST_STEP][PASSED] - CatalogScreen.scrollToProduct(id): Element 'tvProductName_945c758c-8859-4407-819d-12dd9fc464a6' is visible
+
+16-10-2026T18:52:25 - [MESSAGE][PASSED] - Delayed 1 second(s)
+
+16-10-2026T18:52:25 - [MESSAGE][WARNING] - The input TestObject is not a MobileTestObject. Self-Healing is not supported
+
+16-10-2026T18:52:25 - [MESSAGE][PASSED] - Element 'tvProductName_945c758c-8859-4407-819d-12dd9fc464a6' is visible
+
+16-10-2026T18:52:25 - [TEST_STEP][PASSED] - if (id == G_ProductIdFirst): Actual text and expected text of test object 'tvProductName_945c758c-8859-4407-819d-12dd9fc464a6' are matched.
+
+16-10-2026T18:52:25 - [TEST_STEP][PASSED] - CatalogScreen.verifyProductName(id, G_ProductNameFirst): Actual text and expected text of test object 'tvProductName_945c758c-8859-4407-819d-12dd9fc464a6' are matched.
+
+16-10-2026T18:52:26 - [MESSAGE][WARNING] - The input TestObject is not a MobileTestObject. Self-Healing is not supported
+
+16-10-2026T18:52:26 - [MESSAGE][PASSED] - Actual text and expected text of test object 'tvProductName_945c758c-8859-4407-819d-12dd9fc464a6' are matched.
+
+16-10-2026T18:52:26 - [TEST_STEP][PASSED] - CatalogScreen.scrollToProduct(id): Element 'tvProductName_682cec96-ec80-4f48-9e12-a9f61ea0e12f' is visible
+
+16-10-2026T18:52:27 - [MESSAGE][PASSED] - Delayed 1 second(s)
+
+16-10-2026T18:52:27 - [MESSAGE][WARNING] - The input TestObject is not a MobileTestObject. Self-Healing is not supported
+
+16-10-2026T18:52:27 - [MESSAGE][PASSED] - Element 'tvProductName_682cec96-ec80-4f48-9e12-a9f61ea0e12f' is visible
+
+16-10-2026T18:52:27 - [TEST_STEP][PASSED] - if (id == G_ProductIdFirst): null
+
+16-10-2026T18:52:27 - [TEST_STEP][PASSED] - CatalogScreen.scrollToProduct(id): Element 'tvProductName_0b899399-15ae-4a31-9ce2-ee6ede624af3' is visible
+
+16-10-2026T18:52:28 - [MESSAGE][PASSED] - Delayed 1 second(s)
+
+16-10-2026T18:52:28 - [MESSAGE][WARNING] - The input TestObject is not a MobileTestObject. Self-Healing is not supported
+
+16-10-2026T18:52:28 - [MESSAGE][PASSED] - Element 'tvProductName_0b899399-15ae-4a31-9ce2-ee6ede624af3' is visible
+
+16-10-2026T18:52:28 - [TEST_STEP][PASSED] - if (id == G_ProductIdFirst): null
+
+16-10-2026T18:52:28 - [TEST_STEP][PASSED] - CatalogScreen.scrollToProduct(id): Element 'tvProductName_a44019f2-2869-48ef-be45-0d3893dd236f' is visible
+
+16-10-2026T18:52:29 - [MESSAGE][PASSED] - Delayed 1 second(s)
+
+16-10-2026T18:52:29 - [MESSAGE][WARNING] - The input TestObject is not a MobileTestObject. Self-Healing is not supported
+
+16-10-2026T18:52:30 - [MESSAGE][PASSED] - Element 'tvProductName_a44019f2-2869-48ef-be45-0d3893dd236f' is visible
+
+16-10-2026T18:52:30 - [TEST_STEP][PASSED] - if (id == G_ProductIdFirst): null
+
+16-10-2026T18:52:30 - [TEST_STEP][PASSED] - CatalogScreen.scrollToProduct(id): Elemen terlihat setelah geser ke arah up
+
+16-10-2026T18:52:31 - [MESSAGE][PASSED] - Delayed 1 second(s)
+
+16-10-2026T18:52:31 - [MESSAGE][WARNING] - The input TestObject is not a MobileTestObject. Self-Healing is not supported
+
+16-10-2026T18:52:33 - [MESSAGE][WARNING] - Element 'tvProductName_3e682be1-a482-49e6-af95-47e8cbb09c9c' not found (Root cause: com.kms.katalon.core.exception.StepFailedException: Element 'tvProductName_3e682be1-a482-49e6-af95-47e8cbb09c9c' not found
+	at com.kms.katalon.core.mobile.keyword.internal.MobileKeywordMain.stepFailed(MobileKeywordMain.groovy:65)
+	at com.kms.katalon.core.mobile.keyword.builtin.VerifyElementVisibleKeyword$_verifyElementVisible_closure1.doCall(VerifyElementVisibleKeyword.groovy:54)
+	at com.kms.katalon.core.mobile.keyword.builtin.VerifyElementVisibleKeyword$_verifyElementVisible_closure1.call(VerifyElementVisibleKeyword.groovy)
+	at com.kms.katalon.core.mobile.keyword.internal.MobileKeywordMain.runKeyword(MobileKeywordMain.groovy:30)
+	at com.kms.katalon.core.mobile.keyword.builtin.VerifyElementVisibleKeyword.verifyElementVisible(VerifyElementVisibleKeyword.groovy:57)
+	at com.kms.katalon.core.mobile.keyword.builtin.VerifyElementVisibleKeyword.execute(VerifyElementVisibleKeyword.groovy:36)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:106)
+	at com.kms.katalon.core.mobile.keyword.MobileBuiltInKeywords.verifyElementVisible(MobileBuiltInKeywords.groovy:2342)
+	at jastipin.MobileActions.terlihat(MobileActions.groovy:253)
+	at jastipin.MobileActions.scrollTo(MobileActions.groovy:206)
+	at jastipin.MobileActions.scrollToOrFail(MobileActions.groovy:315)
+	at jastipin.CatalogScreen.scrollToProduct(CatalogScreen.groovy:38)
+	at TC01_Catalog_Tampil.run(TC01_Catalog_Tampil:32)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:203)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:115)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:533)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:524)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:503)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:495)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:359)
+	at com.kms.katalon.core.common.CommonExecutor.accessTestCaseMainPhase(CommonExecutor.java:71)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:188)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:115)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:241)
+	at S1016_0.run(S1016_0.groovy:41)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+)
+
+16-10-2026T18:52:33 - [MESSAGE][PASSED] - Current device physical width is 1080
+
+16-10-2026T18:52:33 - [MESSAGE][PASSED] - Current device physical height is 2340
+
+16-10-2026T18:52:34 - [MESSAGE][PASSED] - Delayed 1 second(s)
+
+16-10-2026T18:52:34 - [MESSAGE][WARNING] - The input TestObject is not a MobileTestObject. Self-Healing is not supported
+
+16-10-2026T18:52:36 - [MESSAGE][WARNING] - Element 'tvProductName_3e682be1-a482-49e6-af95-47e8cbb09c9c' not found (Root cause: com.kms.katalon.core.exception.StepFailedException: Element 'tvProductName_3e682be1-a482-49e6-af95-47e8cbb09c9c' not found
+	at com.kms.katalon.core.mobile.keyword.internal.MobileKeywordMain.stepFailed(MobileKeywordMain.groovy:65)
+	at com.kms.katalon.core.mobile.keyword.builtin.VerifyElementVisibleKeyword$_verifyElementVisible_closure1.doCall(VerifyElementVisibleKeyword.groovy:54)
+	at com.kms.katalon.core.mobile.keyword.builtin.VerifyElementVisibleKeyword$_verifyElementVisible_closure1.call(VerifyElementVisibleKeyword.groovy)
+	at com.kms.katalon.core.mobile.keyword.internal.MobileKeywordMain.runKeyword(MobileKeywordMain.groovy:30)
+	at com.kms.katalon.core.mobile.keyword.builtin.VerifyElementVisibleKeyword.verifyElementVisible(VerifyElementVisibleKeyword.groovy:57)
+	at com.kms.katalon.core.mobile.keyword.builtin.VerifyElementVisibleKeyword.execute(VerifyElementVisibleKeyword.groovy:36)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:106)
+	at com.kms.katalon.core.mobile.keyword.MobileBuiltInKeywords.verifyElementVisible(MobileBuiltInKeywords.groovy:2342)
+	at jastipin.MobileActions.terlihat(MobileActions.groovy:253)
+	at jastipin.MobileActions.geserSampaiKetemu(MobileActions.groovy:265)
+	at jastipin.MobileActions.scrollTo(MobileActions.groovy:210)
+	at jastipin.MobileActions.scrollToOrFail(MobileActions.groovy:315)
+	at jastipin.CatalogScreen.scrollToProduct(CatalogScreen.groovy:38)
+	at TC01_Catalog_Tampil.run(TC01_Catalog_Tampil:32)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:203)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:115)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:533)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:524)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:503)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:495)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:359)
+	at com.kms.katalon.core.common.CommonExecutor.accessTestCaseMainPhase(CommonExecutor.java:71)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:188)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:115)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:241)
+	at S1016_0.run(S1016_0.groovy:41)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+)
+
+16-10-2026T18:52:38 - [MESSAGE][PASSED] - Delayed 1 second(s)
+
+16-10-2026T18:52:38 - [MESSAGE][WARNING] - The input TestObject is not a MobileTestObject. Self-Healing is not supported
+
+16-10-2026T18:52:38 - [MESSAGE][PASSED] - Element 'tvProductName_3e682be1-a482-49e6-af95-47e8cbb09c9c' is visible
+
+16-10-2026T18:52:38 - [MESSAGE][INFO] - Elemen terlihat setelah geser ke arah up
+
+16-10-2026T18:52:38 - [TEST_STEP][PASSED] - if (id == G_ProductIdFirst): null
+
+16-10-2026T18:52:38 - [TEST_STEP][PASSED] - else if (id == G_ProductIdFifth): Actual text and expected text of test object 'tvProductName_3e682be1-a482-49e6-af95-47e8cbb09c9c' are matched.
+
+16-10-2026T18:52:38 - [TEST_STEP][PASSED] - CatalogScreen.verifyProductName(id, G_ProductNameFifth): Actual text and expected text of test object 'tvProductName_3e682be1-a482-49e6-af95-47e8cbb09c9c' are matched.
+
+16-10-2026T18:52:38 - [MESSAGE][WARNING] - The input TestObject is not a MobileTestObject. Self-Healing is not supported
+
+16-10-2026T18:52:38 - [MESSAGE][PASSED] - Actual text and expected text of test object 'tvProductName_3e682be1-a482-49e6-af95-47e8cbb09c9c' are matched.
+
+16-10-2026T18:52:38 - [TEST_STEP][PASSED] - CatalogScreen.scrollToProduct(id): Element 'tvProductName_b28bc7c1-3d25-4b30-93fb-7d3ae4c0eb06' is visible
+
+16-10-2026T18:52:40 - [MESSAGE][PASSED] - Delayed 1 second(s)
+
+16-10-2026T18:52:40 - [MESSAGE][WARNING] - The input TestObject is not a MobileTestObject. Self-Healing is not supported
+
+16-10-2026T18:52:41 - [MESSAGE][PASSED] - Element 'tvProductName_b28bc7c1-3d25-4b30-93fb-7d3ae4c0eb06' is visible
+
+16-10-2026T18:52:41 - [TEST_STEP][PASSED] - if (id == G_ProductIdFirst): null
+
+16-10-2026T18:52:41 - [TEST_STEP][PASSED] - CatalogScreen.scrollToProduct(id): Elemen terlihat setelah geser ke arah up
+
+16-10-2026T18:52:42 - [MESSAGE][PASSED] - Delayed 1 second(s)
+
+16-10-2026T18:52:42 - [MESSAGE][WARNING] - The input TestObject is not a MobileTestObject. Self-Healing is not supported
+
+16-10-2026T18:52:44 - [MESSAGE][WARNING] - Element 'tvProductName_bc0ea786-496c-4c10-b727-15e207fead16' not found (Root cause: com.kms.katalon.core.exception.StepFailedException: Element 'tvProductName_bc0ea786-496c-4c10-b727-15e207fead16' not found
+	at com.kms.katalon.core.mobile.keyword.internal.MobileKeywordMain.stepFailed(MobileKeywordMain.groovy:65)
+	at com.kms.katalon.core.mobile.keyword.builtin.VerifyElementVisibleKeyword$_verifyElementVisible_closure1.doCall(VerifyElementVisibleKeyword.groovy:54)
+	at com.kms.katalon.core.mobile.keyword.builtin.VerifyElementVisibleKeyword$_verifyElementVisible_closure1.call(VerifyElementVisibleKeyword.groovy)
+	at com.kms.katalon.core.mobile.keyword.internal.MobileKeywordMain.runKeyword(MobileKeywordMain.groovy:30)
+	at com.kms.katalon.core.mobile.keyword.builtin.VerifyElementVisibleKeyword.verifyElementVisible(VerifyElementVisibleKeyword.groovy:57)
+	at com.kms.katalon.core.mobile.keyword.builtin.VerifyElementVisibleKeyword.execute(VerifyElementVisibleKeyword.groovy:36)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:106)
+	at com.kms.katalon.core.mobile.keyword.MobileBuiltInKeywords.verifyElementVisible(MobileBuiltInKeywords.groovy:2342)
+	at jastipin.MobileActions.terlihat(MobileActions.groovy:253)
+	at jastipin.MobileActions.scrollTo(MobileActions.groovy:206)
+	at jastipin.MobileActions.scrollToOrFail(MobileActions.groovy:315)
+	at jastipin.CatalogScreen.scrollToProduct(CatalogScreen.groovy:38)
+	at TC01_Catalog_Tampil.run(TC01_Catalog_Tampil:32)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:203)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:115)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:533)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:524)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:503)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:495)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:359)
+	at com.kms.katalon.core.common.CommonExecutor.accessTestCaseMainPhase(CommonExecutor.java:71)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:188)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:115)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:241)
+	at S1016_0.run(S1016_0.groovy:41)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+)
+
+16-10-2026T18:52:44 - [MESSAGE][PASSED] - Current device physical width is 1080
+
+16-10-2026T18:52:44 - [MESSAGE][PASSED] - Current device physical height is 2340
+
+16-10-2026T18:52:46 - [MESSAGE][PASSED] - Delayed 1 second(s)
+
+16-10-2026T18:52:46 - [MESSAGE][WARNING] - The input TestObject is not a MobileTestObject. Self-Healing is not supported
+
+16-10-2026T18:52:46 - [MESSAGE][PASSED] - Element 'tvProductName_bc0ea786-496c-4c10-b727-15e207fead16' is visible
+
+16-10-2026T18:52:46 - [MESSAGE][INFO] - Elemen terlihat setelah geser ke arah up
+
+16-10-2026T18:52:46 - [TEST_STEP][PASSED] - if (id == G_ProductIdFirst): null
+
+16-10-2026T18:52:46 - [TEST_STEP][PASSED] - CatalogScreen.scrollToProduct(id): Elemen terlihat setelah geser ke arah up
+
+16-10-2026T18:52:47 - [MESSAGE][PASSED] - Delayed 1 second(s)
+
+16-10-2026T18:52:47 - [MESSAGE][WARNING] - The input TestObject is not a MobileTestObject. Self-Healing is not supported
+
+16-10-2026T18:52:49 - [MESSAGE][WARNING] - Element 'tvProductName_94f7f2fe-1296-4f63-85b5-feb0b8072cee' not found (Root cause: com.kms.katalon.core.exception.StepFailedException: Element 'tvProductName_94f7f2fe-1296-4f63-85b5-feb0b8072cee' not found
+	at com.kms.katalon.core.mobile.keyword.internal.MobileKeywordMain.stepFailed(MobileKeywordMain.groovy:65)
+	at com.kms.katalon.core.mobile.keyword.builtin.VerifyElementVisibleKeyword$_verifyElementVisible_closure1.doCall(VerifyElementVisibleKeyword.groovy:54)
+	at com.kms.katalon.core.mobile.keyword.builtin.VerifyElementVisibleKeyword$_verifyElementVisible_closure1.call(VerifyElementVisibleKeyword.groovy)
+	at com.kms.katalon.core.mobile.keyword.internal.MobileKeywordMain.runKeyword(MobileKeywordMain.groovy:30)
+	at com.kms.katalon.core.mobile.keyword.builtin.VerifyElementVisibleKeyword.verifyElementVisible(VerifyElementVisibleKeyword.groovy:57)
+	at com.kms.katalon.core.mobile.keyword.builtin.VerifyElementVisibleKeyword.execute(VerifyElementVisibleKeyword.groovy:36)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:106)
+	at com.kms.katalon.core.mobile.keyword.MobileBuiltInKeywords.verifyElementVisible(MobileBuiltInKeywords.groovy:2342)
+	at jastipin.MobileActions.terlihat(MobileActions.groovy:253)
+	at jastipin.MobileActions.scrollTo(MobileActions.groovy:206)
+	at jastipin.MobileActions.scrollToOrFail(MobileActions.groovy:315)
+	at jastipin.CatalogScreen.scrollToProduct(CatalogScreen.groovy:38)
+	at TC01_Catalog_Tampil.run(TC01_Catalog_Tampil:32)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:203)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:115)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:533)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:524)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:503)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:495)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:359)
+	at com.kms.katalon.core.common.CommonExecutor.accessTestCaseMainPhase(CommonExecutor.java:71)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:188)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:115)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:241)
+	at S1016_0.run(S1016_0.groovy:41)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+)
+
+16-10-2026T18:52:49 - [MESSAGE][PASSED] - Current device physical width is 1080
+
+16-10-2026T18:52:49 - [MESSAGE][PASSED] - Current device physical height is 2340
+
+16-10-2026T18:52:51 - [MESSAGE][PASSED] - Delayed 1 second(s)
+
+16-10-2026T18:52:51 - [MESSAGE][WARNING] - The input TestObject is not a MobileTestObject. Self-Healing is not supported
+
+16-10-2026T18:52:53 - [MESSAGE][WARNING] - Element 'tvProductName_94f7f2fe-1296-4f63-85b5-feb0b8072cee' not found (Root cause: com.kms.katalon.core.exception.StepFailedException: Element 'tvProductName_94f7f2fe-1296-4f63-85b5-feb0b8072cee' not found
+	at com.kms.katalon.core.mobile.keyword.internal.MobileKeywordMain.stepFailed(MobileKeywordMain.groovy:65)
+	at com.kms.katalon.core.mobile.keyword.builtin.VerifyElementVisibleKeyword$_verifyElementVisible_closure1.doCall(VerifyElementVisibleKeyword.groovy:54)
+	at com.kms.katalon.core.mobile.keyword.builtin.VerifyElementVisibleKeyword$_verifyElementVisible_closure1.call(VerifyElementVisibleKeyword.groovy)
+	at com.kms.katalon.core.mobile.keyword.internal.MobileKeywordMain.runKeyword(MobileKeywordMain.groovy:30)
+	at com.kms.katalon.core.mobile.keyword.builtin.VerifyElementVisibleKeyword.verifyElementVisible(VerifyElementVisibleKeyword.groovy:57)
+	at com.kms.katalon.core.mobile.keyword.builtin.VerifyElementVisibleKeyword.execute(VerifyElementVisibleKeyword.groovy:36)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:106)
+	at com.kms.katalon.core.mobile.keyword.MobileBuiltInKeywords.verifyElementVisible(MobileBuiltInKeywords.groovy:2342)
+	at jastipin.MobileActions.terlihat(MobileActions.groovy:253)
+	at jastipin.MobileActions.geserSampaiKetemu(MobileActions.groovy:265)
+	at jastipin.MobileActions.scrollTo(MobileActions.groovy:210)
+	at jastipin.MobileActions.scrollToOrFail(MobileActions.groovy:315)
+	at jastipin.CatalogScreen.scrollToProduct(CatalogScreen.groovy:38)
+	at TC01_Catalog_Tampil.run(TC01_Catalog_Tampil:32)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:203)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:115)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:533)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:524)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:503)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:495)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:359)
+	at com.kms.katalon.core.common.CommonExecutor.accessTestCaseMainPhase(CommonExecutor.java:71)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:188)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:115)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:241)
+	at S1016_0.run(S1016_0.groovy:41)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+)
+
+16-10-2026T18:52:54 - [MESSAGE][PASSED] - Delayed 1 second(s)
+
+16-10-2026T18:52:54 - [MESSAGE][WARNING] - The input TestObject is not a MobileTestObject. Self-Healing is not supported
+
+16-10-2026T18:52:54 - [MESSAGE][PASSED] - Element 'tvProductName_94f7f2fe-1296-4f63-85b5-feb0b8072cee' is visible
+
+16-10-2026T18:52:54 - [MESSAGE][INFO] - Elemen terlihat setelah geser ke arah up
+
+16-10-2026T18:52:54 - [TEST_STEP][PASSED] - if (id == G_ProductIdFirst): null
+
+16-10-2026T18:52:54 - [TEST_STEP][PASSED] - MobileActions.scrollToOrFail(findTestObject("Jastipin/Catalog/tvPriceNote"), 12, "blok cara pesan"): Element 'Object Repository/Jastipin/Catalog/tvPriceNote' is visible
+
+16-10-2026T18:52:55 - [MESSAGE][PASSED] - Delayed 1 second(s)
+
+16-10-2026T18:52:55 - [MESSAGE][PASSED] - Element 'Object Repository/Jastipin/Catalog/tvPriceNote' is visible
+
+16-10-2026T18:52:55 - [TEST_STEP][PASSED] - MobileActions.scrollToOrFail(findTestObject("Jastipin/Catalog/tvWhatsappNumber"), 12, "blok kontak"): Element 'Object Repository/Jastipin/Catalog/tvWhatsappNumber' is visible
+
+16-10-2026T18:52:57 - [MESSAGE][PASSED] - Delayed 1 second(s)
+
+16-10-2026T18:52:57 - [MESSAGE][PASSED] - Element 'Object Repository/Jastipin/Catalog/tvWhatsappNumber' is visible
+
+16-10-2026T18:52:57 - [TEST_STEP][PASSED] - MobileActions.scrollToOrFail(findTestObject("Jastipin/Catalog/tvFooterNote"), 12, "catatan kaki katalog"): Elemen terlihat setelah geser ke arah up
+
+16-10-2026T18:52:58 - [MESSAGE][PASSED] - Delayed 1 second(s)
+
+16-10-2026T18:53:00 - [MESSAGE][WARNING] - Element 'Object Repository/Jastipin/Catalog/tvFooterNote' not found (Root cause: com.kms.katalon.core.exception.StepFailedException: Element 'Object Repository/Jastipin/Catalog/tvFooterNote' not found
+	at com.kms.katalon.core.mobile.keyword.internal.MobileKeywordMain.stepFailed(MobileKeywordMain.groovy:65)
+	at com.kms.katalon.core.mobile.keyword.builtin.VerifyElementVisibleKeyword$_verifyElementVisible_closure1.doCall(VerifyElementVisibleKeyword.groovy:54)
+	at com.kms.katalon.core.mobile.keyword.builtin.VerifyElementVisibleKeyword$_verifyElementVisible_closure1.call(VerifyElementVisibleKeyword.groovy)
+	at com.kms.katalon.core.mobile.keyword.internal.MobileKeywordMain.runKeyword(MobileKeywordMain.groovy:30)
+	at com.kms.katalon.core.mobile.keyword.builtin.VerifyElementVisibleKeyword.verifyElementVisible(VerifyElementVisibleKeyword.groovy:57)
+	at com.kms.katalon.core.mobile.keyword.builtin.VerifyElementVisibleKeyword.execute(VerifyElementVisibleKeyword.groovy:36)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:106)
+	at com.kms.katalon.core.mobile.keyword.MobileBuiltInKeywords.verifyElementVisible(MobileBuiltInKeywords.groovy:2342)
+	at jastipin.MobileActions.terlihat(MobileActions.groovy:253)
+	at jastipin.MobileActions.scrollTo(MobileActions.groovy:206)
+	at jastipin.MobileActions.scrollToOrFail(MobileActions.groovy:315)
+	at TC01_Catalog_Tampil.run(TC01_Catalog_Tampil:47)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:203)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:115)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:533)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:524)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:503)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:495)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:359)
+	at com.kms.katalon.core.common.CommonExecutor.accessTestCaseMainPhase(CommonExecutor.java:71)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:188)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:115)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:241)
+	at S1016_0.run(S1016_0.groovy:41)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+)
+
+16-10-2026T18:53:00 - [MESSAGE][PASSED] - Current device physical width is 1080
+
+16-10-2026T18:53:00 - [MESSAGE][PASSED] - Current device physical height is 2340
+
+16-10-2026T18:53:01 - [MESSAGE][PASSED] - Delayed 1 second(s)
+
+16-10-2026T18:53:01 - [MESSAGE][PASSED] - Element 'Object Repository/Jastipin/Catalog/tvFooterNote' is visible
+
+16-10-2026T18:53:01 - [MESSAGE][INFO] - Elemen terlihat setelah geser ke arah up
+
+16-10-2026T18:53:01 - [TEST_STEP][PASSED] - MobileActions.scrollToOrFail(findTestObject("Jastipin/Catalog/btnOpenAdmin"), 12, "tombol Masuk sebagai admin"): Element 'Object Repository/Jastipin/Catalog/btnOpenAdmin' is visible
+
+16-10-2026T18:53:03 - [MESSAGE][PASSED] - Delayed 1 second(s)
+
+16-10-2026T18:53:03 - [MESSAGE][PASSED] - Element 'Object Repository/Jastipin/Catalog/btnOpenAdmin' is visible
+
+16-10-2026T18:53:03 - [TEST_STEP][PASSED] - MobileActions.takeScreenshot("TC01_katalog"): Screenshot is taken
+
+16-10-2026T18:53:04 - [MESSAGE][PASSED] - Screenshot is taken
+[[ATTACHMENT|artifacts\shot-TC01_katalog.png]]
+
+16-10-2026T18:53:04 - [TEST_STEP][PASSED] - Start listener action : afterTestCase: null
+
+16-10-2026T18:53:04 - [TEST_STEP][PASSED] - status = testCaseContext.getTestCaseStatus(): null
+
+16-10-2026T18:53:04 - [TEST_STEP][PASSED] - logInfo("Test case selesai: " + testCaseContext.getTestCaseId() + " status=" + status): Test case selesai: Test Cases/Smoke/TC01_Catalog_Tampil status=PASSED
+
+16-10-2026T18:53:04 - [MESSAGE][INFO] - Test case selesai: Test Cases/Smoke/TC01_Catalog_Tampil status=PASSED
+
+16-10-2026T18:53:04 - [TEST_STEP][PASSED] - if ("FAILED".equals(status) && G_ScreenshotOnFailure): null]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Smoke/TC02_Buka_Detail_Produk" time="24.329" classname="Test Cases/Smoke/TC02_Buka_Detail_Produk" status="PASSED">
+         <system-out><![CDATA[16-10-2026T18:53:04 - [TEST_CASE][PASSED] - Test Cases/Smoke/TC02_Buka_Detail_Produk: Test Cases/Smoke/TC02_Buka_Detail_Produk
+
+16-10-2026T18:53:04 - [TEST_STEP][PASSED] - Start listener action : beforeTestCase: Delayed 2 second(s)
+
+16-10-2026T18:53:04 - [TEST_STEP][PASSED] - logInfo("Test case dimulai: " + testCaseContext.getTestCaseId()): Test case dimulai: Test Cases/Smoke/TC02_Buka_Detail_Produk
+
+16-10-2026T18:53:04 - [MESSAGE][INFO] - Test case dimulai: Test Cases/Smoke/TC02_Buka_Detail_Produk
+
+16-10-2026T18:53:04 - [TEST_STEP][PASSED] - if (G_ResetDataBeforeEachCase): Delayed 2 second(s)
+
+16-10-2026T18:53:04 - [TEST_STEP][PASSED] - MobileActions.resetAndLaunch(): Delayed 2 second(s)
+
+16-10-2026T18:53:06 - [MESSAGE][PASSED] - Close app successfully
+
+16-10-2026T18:53:06 - [MESSAGE][INFO] - adb dipakai: C:\Users\user\.katalon\tools\android_sdk\platform-tools\adb.exe
+
+16-10-2026T18:53:07 - [MESSAGE][INFO] - pm clear com.fikri.jastipin -> Success
+
+16-10-2026T18:53:07 - [MESSAGE][INFO] - Detected NodeJS location: "C:\Program Files\nodejs\node.exe"
+
+16-10-2026T18:53:11 - [MESSAGE][INFO] - appium log: C:\Users\user\KatalonProjects\jastipin-mobile-automation\Reports\20261016_185140\Smoke_Suite\20261016_185144\appium.log
+
+16-10-2026T18:53:15 - [MESSAGE][INFO] - Appium server started on port 54,768
+
+16-10-2026T18:53:19 - [MESSAGE][WARNING] - Unable to get appium status. Root cause (Cannot invoke "com.google.gson.JsonObject.getAsJsonPrimitive(String)" because the return value of "com.google.gson.JsonObject.getAsJsonObject(String)" is null)
+
+16-10-2026T18:53:19 - [MESSAGE][PASSED] - Starting application with Id: 'com.fikri.jastipin'
+
+16-10-2026T18:53:25 - [MESSAGE][PASSED] - Delayed 2 second(s)
+
+16-10-2026T18:53:25 - [TEST_STEP][PASSED] - comment("TC02_Buka_Detail_Produk: Menekan kartu barang membuka detail dengan nama yang sesuai."): TC02_Buka_Detail_Produk: Menekan kartu barang membuka detail dengan nama yang sesuai.
+
+16-10-2026T18:53:25 - [MESSAGE][INFO] - TC02_Buka_Detail_Produk: Menekan kartu barang membuka detail dengan nama yang sesuai.
+
+16-10-2026T18:53:25 - [TEST_STEP][PASSED] - CatalogScreen.verifyVisible(): Element 'Object Repository/Jastipin/Catalog/scrCatalog' is exist
+
+16-10-2026T18:53:26 - [MESSAGE][PASSED] - Element 'Object Repository/Jastipin/Catalog/scrCatalog' is exist
+
+16-10-2026T18:53:26 - [TEST_STEP][PASSED] - CatalogScreen.openProduct(G_ProductIdFirst): Tapped on element 'cardProduct_945c758c-8859-4407-819d-12dd9fc464a6'
+
+16-10-2026T18:53:26 - [MESSAGE][WARNING] - The input TestObject is not a MobileTestObject. Self-Healing is not supported
+
+16-10-2026T18:53:26 - [MESSAGE][PASSED] - Tapped on element 'cardProduct_945c758c-8859-4407-819d-12dd9fc464a6'
+
+16-10-2026T18:53:26 - [TEST_STEP][PASSED] - DetailScreen.verifyVisible(): Element 'Object Repository/Jastipin/Detail/scrDetail' is exist
+
+16-10-2026T18:53:27 - [MESSAGE][PASSED] - Element 'Object Repository/Jastipin/Detail/scrDetail' is exist
+
+16-10-2026T18:53:27 - [TEST_STEP][PASSED] - DetailScreen.verifyName(G_ProductNameFirst): Actual text and expected text of test object 'Object Repository/Jastipin/Detail/tvDetailName' are matched.
+
+16-10-2026T18:53:27 - [MESSAGE][PASSED] - Actual text and expected text of test object 'Object Repository/Jastipin/Detail/tvDetailName' are matched.
+
+16-10-2026T18:53:27 - [TEST_STEP][PASSED] - DetailScreen.backToCatalog(): Tapped on element 'Object Repository/Jastipin/Detail/btnBack'
+
+16-10-2026T18:53:27 - [MESSAGE][PASSED] - Tapped on element 'Object Repository/Jastipin/Detail/btnBack'
+
+16-10-2026T18:53:27 - [TEST_STEP][PASSED] - CatalogScreen.verifyVisible(): Element 'Object Repository/Jastipin/Catalog/scrCatalog' is exist
+
+16-10-2026T18:53:29 - [MESSAGE][PASSED] - Element 'Object Repository/Jastipin/Catalog/scrCatalog' is exist
+
+16-10-2026T18:53:29 - [TEST_STEP][PASSED] - Start listener action : afterTestCase: null
+
+16-10-2026T18:53:29 - [TEST_STEP][PASSED] - status = testCaseContext.getTestCaseStatus(): null
+
+16-10-2026T18:53:29 - [TEST_STEP][PASSED] - logInfo("Test case selesai: " + testCaseContext.getTestCaseId() + " status=" + status): Test case selesai: Test Cases/Smoke/TC02_Buka_Detail_Produk status=PASSED
+
+16-10-2026T18:53:29 - [MESSAGE][INFO] - Test case selesai: Test Cases/Smoke/TC02_Buka_Detail_Produk status=PASSED
+
+16-10-2026T18:53:29 - [TEST_STEP][PASSED] - if ("FAILED".equals(status) && G_ScreenshotOnFailure): null]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Smoke/TC03_Galeri_Tombol_Berikutnya" time="22.464" classname="Test Cases/Smoke/TC03_Galeri_Tombol_Berikutnya" status="PASSED">
+         <system-out><![CDATA[16-10-2026T18:53:29 - [TEST_CASE][PASSED] - Test Cases/Smoke/TC03_Galeri_Tombol_Berikutnya: Test Cases/Smoke/TC03_Galeri_Tombol_Berikutnya
+
+16-10-2026T18:53:29 - [TEST_STEP][PASSED] - Start listener action : beforeTestCase: Delayed 2 second(s)
+
+16-10-2026T18:53:29 - [TEST_STEP][PASSED] - logInfo("Test case dimulai: " + testCaseContext.getTestCaseId()): Test case dimulai: Test Cases/Smoke/TC03_Galeri_Tombol_Berikutnya
+
+16-10-2026T18:53:29 - [MESSAGE][INFO] - Test case dimulai: Test Cases/Smoke/TC03_Galeri_Tombol_Berikutnya
+
+16-10-2026T18:53:29 - [TEST_STEP][PASSED] - if (G_ResetDataBeforeEachCase): Delayed 2 second(s)
+
+16-10-2026T18:53:29 - [TEST_STEP][PASSED] - MobileActions.resetAndLaunch(): Delayed 2 second(s)
+
+16-10-2026T18:53:31 - [MESSAGE][PASSED] - Close app successfully
+
+16-10-2026T18:53:31 - [MESSAGE][INFO] - adb dipakai: C:\Users\user\.katalon\tools\android_sdk\platform-tools\adb.exe
+
+16-10-2026T18:53:31 - [MESSAGE][INFO] - pm clear com.fikri.jastipin -> Success
+
+16-10-2026T18:53:31 - [MESSAGE][INFO] - Detected NodeJS location: "C:\Program Files\nodejs\node.exe"
+
+16-10-2026T18:53:31 - [MESSAGE][INFO] - appium log: C:\Users\user\KatalonProjects\jastipin-mobile-automation\Reports\20261016_185140\Smoke_Suite\20261016_185144\appium.log
+
+16-10-2026T18:53:34 - [MESSAGE][INFO] - Appium server started on port 54,917
+
+16-10-2026T18:53:38 - [MESSAGE][WARNING] - Unable to get appium status. Root cause (Cannot invoke "com.google.gson.JsonObject.getAsJsonPrimitive(String)" because the return value of "com.google.gson.JsonObject.getAsJsonObject(String)" is null)
+
+16-10-2026T18:53:38 - [MESSAGE][PASSED] - Starting application with Id: 'com.fikri.jastipin'
+
+16-10-2026T18:53:44 - [MESSAGE][PASSED] - Delayed 2 second(s)
+
+16-10-2026T18:53:44 - [TEST_STEP][PASSED] - comment("TC03_Galeri_Tombol_Berikutnya: Tombol galeri mengganti foto tanpa meninggalkan layar detail."): TC03_Galeri_Tombol_Berikutnya: Tombol galeri mengganti foto tanpa meninggalkan layar detail.
+
+16-10-2026T18:53:44 - [MESSAGE][INFO] - TC03_Galeri_Tombol_Berikutnya: Tombol galeri mengganti foto tanpa meninggalkan layar detail.
+
+16-10-2026T18:53:44 - [TEST_STEP][PASSED] - CatalogScreen.openProduct(G_ProductIdFirst): Tapped on element 'cardProduct_945c758c-8859-4407-819d-12dd9fc464a6'
+
+16-10-2026T18:53:44 - [MESSAGE][WARNING] - The input TestObject is not a MobileTestObject. Self-Healing is not supported
+
+16-10-2026T18:53:45 - [MESSAGE][PASSED] - Tapped on element 'cardProduct_945c758c-8859-4407-819d-12dd9fc464a6'
+
+16-10-2026T18:53:45 - [TEST_STEP][PASSED] - DetailScreen.verifyVisible(): Element 'Object Repository/Jastipin/Detail/scrDetail' is exist
+
+16-10-2026T18:53:46 - [MESSAGE][PASSED] - Element 'Object Repository/Jastipin/Detail/scrDetail' is exist
+
+16-10-2026T18:53:46 - [TEST_STEP][PASSED] - verifyElementExist(findTestObject("Jastipin/Detail/imgMain"), G_Timeout): Element 'Object Repository/Jastipin/Detail/imgMain' is exist
+
+16-10-2026T18:53:46 - [MESSAGE][PASSED] - Element 'Object Repository/Jastipin/Detail/imgMain' is exist
+
+16-10-2026T18:53:46 - [TEST_STEP][PASSED] - DetailScreen.nextImage(): Tapped on element 'Object Repository/Jastipin/Detail/btnNext'
+
+16-10-2026T18:53:46 - [MESSAGE][PASSED] - Tapped on element 'Object Repository/Jastipin/Detail/btnNext'
+
+16-10-2026T18:53:46 - [TEST_STEP][PASSED] - delay(1): Delayed 1 second(s)
+
+16-10-2026T18:53:47 - [MESSAGE][PASSED] - Delayed 1 second(s)
+
+16-10-2026T18:53:47 - [TEST_STEP][PASSED] - DetailScreen.verifyName(G_ProductNameFirst): Actual text and expected text of test object 'Object Repository/Jastipin/Detail/tvDetailName' are matched.
+
+16-10-2026T18:53:47 - [MESSAGE][PASSED] - Actual text and expected text of test object 'Object Repository/Jastipin/Detail/tvDetailName' are matched.
+
+16-10-2026T18:53:47 - [TEST_STEP][PASSED] - DetailScreen.previousImage(): Tapped on element 'Object Repository/Jastipin/Detail/btnPrev'
+
+16-10-2026T18:53:48 - [MESSAGE][PASSED] - Tapped on element 'Object Repository/Jastipin/Detail/btnPrev'
+
+16-10-2026T18:53:48 - [TEST_STEP][PASSED] - delay(1): Delayed 1 second(s)
+
+16-10-2026T18:53:49 - [MESSAGE][PASSED] - Delayed 1 second(s)
+
+16-10-2026T18:53:49 - [TEST_STEP][PASSED] - DetailScreen.verifyVisible(): Element 'Object Repository/Jastipin/Detail/scrDetail' is exist
+
+16-10-2026T18:53:49 - [MESSAGE][PASSED] - Element 'Object Repository/Jastipin/Detail/scrDetail' is exist
+
+16-10-2026T18:53:49 - [TEST_STEP][PASSED] - MobileActions.takeScreenshot("TC03_galeri"): Screenshot is taken
+
+16-10-2026T18:53:51 - [MESSAGE][PASSED] - Screenshot is taken
+[[ATTACHMENT|artifacts\shot-TC03_galeri.png]]
+
+16-10-2026T18:53:51 - [TEST_STEP][PASSED] - Start listener action : afterTestCase: null
+
+16-10-2026T18:53:51 - [TEST_STEP][PASSED] - status = testCaseContext.getTestCaseStatus(): null
+
+16-10-2026T18:53:51 - [TEST_STEP][PASSED] - logInfo("Test case selesai: " + testCaseContext.getTestCaseId() + " status=" + status): Test case selesai: Test Cases/Smoke/TC03_Galeri_Tombol_Berikutnya status=PASSED
+
+16-10-2026T18:53:51 - [MESSAGE][INFO] - Test case selesai: Test Cases/Smoke/TC03_Galeri_Tombol_Berikutnya status=PASSED
+
+16-10-2026T18:53:51 - [TEST_STEP][PASSED] - if ("FAILED".equals(status) && G_ScreenshotOnFailure): null]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Smoke/TC04_Admin_Login_Berhasil" time="32.561" classname="Test Cases/Smoke/TC04_Admin_Login_Berhasil" status="PASSED">
+         <system-out><![CDATA[16-10-2026T18:53:51 - [TEST_CASE][PASSED] - Test Cases/Smoke/TC04_Admin_Login_Berhasil: Test Cases/Smoke/TC04_Admin_Login_Berhasil
+
+16-10-2026T18:53:51 - [TEST_STEP][PASSED] - Start listener action : beforeTestCase: Delayed 2 second(s)
+
+16-10-2026T18:53:51 - [TEST_STEP][PASSED] - logInfo("Test case dimulai: " + testCaseContext.getTestCaseId()): Test case dimulai: Test Cases/Smoke/TC04_Admin_Login_Berhasil
+
+16-10-2026T18:53:51 - [MESSAGE][INFO] - Test case dimulai: Test Cases/Smoke/TC04_Admin_Login_Berhasil
+
+16-10-2026T18:53:51 - [TEST_STEP][PASSED] - if (G_ResetDataBeforeEachCase): Delayed 2 second(s)
+
+16-10-2026T18:53:51 - [TEST_STEP][PASSED] - MobileActions.resetAndLaunch(): Delayed 2 second(s)
+
+16-10-2026T18:53:53 - [MESSAGE][PASSED] - Close app successfully
+
+16-10-2026T18:53:53 - [MESSAGE][INFO] - adb dipakai: C:\Users\user\.katalon\tools\android_sdk\platform-tools\adb.exe
+
+16-10-2026T18:53:53 - [MESSAGE][INFO] - pm clear com.fikri.jastipin -> Success
+
+16-10-2026T18:53:53 - [MESSAGE][INFO] - Detected NodeJS location: "C:\Program Files\nodejs\node.exe"
+
+16-10-2026T18:53:58 - [MESSAGE][INFO] - appium log: C:\Users\user\KatalonProjects\jastipin-mobile-automation\Reports\20261016_185140\Smoke_Suite\20261016_185144\appium.log
+
+16-10-2026T18:54:00 - [MESSAGE][INFO] - Appium server started on port 55,063
+
+16-10-2026T18:54:04 - [MESSAGE][WARNING] - Unable to get appium status. Root cause (Cannot invoke "com.google.gson.JsonObject.getAsJsonPrimitive(String)" because the return value of "com.google.gson.JsonObject.getAsJsonObject(String)" is null)
+
+16-10-2026T18:54:04 - [MESSAGE][PASSED] - Starting application with Id: 'com.fikri.jastipin'
+
+16-10-2026T18:54:11 - [MESSAGE][PASSED] - Delayed 2 second(s)
+
+16-10-2026T18:54:11 - [TEST_STEP][PASSED] - comment("TC04_Admin_Login_Berhasil: Kredensial admin yang benar membuka layar kelola barang."): TC04_Admin_Login_Berhasil: Kredensial admin yang benar membuka layar kelola barang.
+
+16-10-2026T18:54:11 - [MESSAGE][INFO] - TC04_Admin_Login_Berhasil: Kredensial admin yang benar membuka layar kelola barang.
+
+16-10-2026T18:54:11 - [TEST_STEP][PASSED] - CatalogScreen.openAdmin(): Tapped on element 'Object Repository/Jastipin/Catalog/btnOpenAdmin'
+
+16-10-2026T18:54:12 - [MESSAGE][PASSED] - Delayed 1 second(s)
+
+16-10-2026T18:54:14 - [MESSAGE][WARNING] - Element 'Object Repository/Jastipin/Catalog/btnOpenAdmin' not found (Root cause: com.kms.katalon.core.exception.StepFailedException: Element 'Object Repository/Jastipin/Catalog/btnOpenAdmin' not found
+	at com.kms.katalon.core.mobile.keyword.internal.MobileKeywordMain.stepFailed(MobileKeywordMain.groovy:65)
+	at com.kms.katalon.core.mobile.keyword.builtin.VerifyElementVisibleKeyword$_verifyElementVisible_closure1.doCall(VerifyElementVisibleKeyword.groovy:54)
+	at com.kms.katalon.core.mobile.keyword.builtin.VerifyElementVisibleKeyword$_verifyElementVisible_closure1.call(VerifyElementVisibleKeyword.groovy)
+	at com.kms.katalon.core.mobile.keyword.internal.MobileKeywordMain.runKeyword(MobileKeywordMain.groovy:30)
+	at com.kms.katalon.core.mobile.keyword.builtin.VerifyElementVisibleKeyword.verifyElementVisible(VerifyElementVisibleKeyword.groovy:57)
+	at com.kms.katalon.core.mobile.keyword.builtin.VerifyElementVisibleKeyword.execute(VerifyElementVisibleKeyword.groovy:36)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:106)
+	at com.kms.katalon.core.mobile.keyword.MobileBuiltInKeywords.verifyElementVisible(MobileBuiltInKeywords.groovy:2342)
+	at jastipin.MobileActions.terlihat(MobileActions.groovy:253)
+	at jastipin.MobileActions.scrollTo(MobileActions.groovy:206)
+	at jastipin.MobileActions.scrollToOrFail(MobileActions.groovy:315)
+	at jastipin.CatalogScreen.openAdmin(CatalogScreen.groovy:30)
+	at TC04_Admin_Login_Berhasil.run(TC04_Admin_Login_Berhasil:12)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:203)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:115)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:533)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:524)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:503)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:495)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:359)
+	at com.kms.katalon.core.common.CommonExecutor.accessTestCaseMainPhase(CommonExecutor.java:71)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:188)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:115)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:241)
+	at S1016_0.run(S1016_0.groovy:41)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+)
+
+16-10-2026T18:54:14 - [MESSAGE][PASSED] - Current device physical width is 1080
+
+16-10-2026T18:54:14 - [MESSAGE][PASSED] - Current device physical height is 2340
+
+16-10-2026T18:54:15 - [MESSAGE][PASSED] - Delayed 1 second(s)
+
+16-10-2026T18:54:16 - [MESSAGE][PASSED] - Element 'Object Repository/Jastipin/Catalog/btnOpenAdmin' is visible
+
+16-10-2026T18:54:16 - [MESSAGE][INFO] - Elemen terlihat setelah geser ke arah up
+
+16-10-2026T18:54:16 - [MESSAGE][PASSED] - Tapped on element 'Object Repository/Jastipin/Catalog/btnOpenAdmin'
+
+16-10-2026T18:54:16 - [TEST_STEP][PASSED] - AdminLoginScreen.verifyVisible(): Element 'Object Repository/Jastipin/AdminLogin/scrAdminLogin' is exist
+
+16-10-2026T18:54:17 - [MESSAGE][PASSED] - Element 'Object Repository/Jastipin/AdminLogin/scrAdminLogin' is exist
+
+16-10-2026T18:54:17 - [TEST_STEP][PASSED] - AdminLoginScreen.loginAsAdmin(): Tapped on element 'Object Repository/Jastipin/AdminLogin/btnLogin'
+
+16-10-2026T18:54:18 - [MESSAGE][PASSED] - Text 'admin@jastipin.id' has been set to element 'Object Repository/Jastipin/AdminLogin/etAdminEmail'
+
+16-10-2026T18:54:19 - [MESSAGE][PASSED] - Text 'jastipin123' has been set to element 'Object Repository/Jastipin/AdminLogin/etAdminPassword'
+
+16-10-2026T18:54:22 - [MESSAGE][PASSED] - Tapped on element 'Object Repository/Jastipin/AdminLogin/btnLogin'
+
+16-10-2026T18:54:22 - [TEST_STEP][PASSED] - AdminHomeScreen.verifyVisible(): Element 'Object Repository/Jastipin/AdminHome/scrAdminHome' is exist
+
+16-10-2026T18:54:23 - [MESSAGE][PASSED] - Element 'Object Repository/Jastipin/AdminHome/scrAdminHome' is exist
+
+16-10-2026T18:54:23 - [TEST_STEP][PASSED] - AdminHomeScreen.verifyLoggedInAs(G_AdminEmail): Actual text and expected text of test object 'Object Repository/Jastipin/AdminHome/tvWhoami' are matched.
+
+16-10-2026T18:54:24 - [MESSAGE][PASSED] - Actual text and expected text of test object 'Object Repository/Jastipin/AdminHome/tvWhoami' are matched.
+
+16-10-2026T18:54:24 - [TEST_STEP][PASSED] - Start listener action : afterTestCase: null
+
+16-10-2026T18:54:24 - [TEST_STEP][PASSED] - status = testCaseContext.getTestCaseStatus(): null
+
+16-10-2026T18:54:24 - [TEST_STEP][PASSED] - logInfo("Test case selesai: " + testCaseContext.getTestCaseId() + " status=" + status): Test case selesai: Test Cases/Smoke/TC04_Admin_Login_Berhasil status=PASSED
+
+16-10-2026T18:54:24 - [MESSAGE][INFO] - Test case selesai: Test Cases/Smoke/TC04_Admin_Login_Berhasil status=PASSED
+
+16-10-2026T18:54:24 - [TEST_STEP][PASSED] - if ("FAILED".equals(status) && G_ScreenshotOnFailure): null]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Smoke/TC05_Tambah_Produk_Baru" time="43.27" classname="Test Cases/Smoke/TC05_Tambah_Produk_Baru" status="PASSED">
+         <system-out><![CDATA[16-10-2026T18:54:24 - [TEST_CASE][PASSED] - Test Cases/Smoke/TC05_Tambah_Produk_Baru: Test Cases/Smoke/TC05_Tambah_Produk_Baru
+
+16-10-2026T18:54:24 - [TEST_STEP][PASSED] - Start listener action : beforeTestCase: Delayed 2 second(s)
+
+16-10-2026T18:54:24 - [TEST_STEP][PASSED] - logInfo("Test case dimulai: " + testCaseContext.getTestCaseId()): Test case dimulai: Test Cases/Smoke/TC05_Tambah_Produk_Baru
+
+16-10-2026T18:54:24 - [MESSAGE][INFO] - Test case dimulai: Test Cases/Smoke/TC05_Tambah_Produk_Baru
+
+16-10-2026T18:54:24 - [TEST_STEP][PASSED] - if (G_ResetDataBeforeEachCase): Delayed 2 second(s)
+
+16-10-2026T18:54:24 - [TEST_STEP][PASSED] - MobileActions.resetAndLaunch(): Delayed 2 second(s)
+
+16-10-2026T18:54:25 - [MESSAGE][PASSED] - Close app successfully
+
+16-10-2026T18:54:26 - [MESSAGE][INFO] - adb dipakai: C:\Users\user\.katalon\tools\android_sdk\platform-tools\adb.exe
+
+16-10-2026T18:54:26 - [MESSAGE][INFO] - pm clear com.fikri.jastipin -> Success
+
+16-10-2026T18:54:26 - [MESSAGE][INFO] - Detected NodeJS location: "C:\Program Files\nodejs\node.exe"
+
+16-10-2026T18:54:30 - [MESSAGE][INFO] - appium log: C:\Users\user\KatalonProjects\jastipin-mobile-automation\Reports\20261016_185140\Smoke_Suite\20261016_185144\appium.log
+
+16-10-2026T18:54:33 - [MESSAGE][INFO] - Appium server started on port 55,214
+
+16-10-2026T18:54:37 - [MESSAGE][WARNING] - Unable to get appium status. Root cause (Cannot invoke "com.google.gson.JsonObject.getAsJsonPrimitive(String)" because the return value of "com.google.gson.JsonObject.getAsJsonObject(String)" is null)
+
+16-10-2026T18:54:37 - [MESSAGE][PASSED] - Starting application with Id: 'com.fikri.jastipin'
+
+16-10-2026T18:54:43 - [MESSAGE][PASSED] - Delayed 2 second(s)
+
+16-10-2026T18:54:43 - [TEST_STEP][PASSED] - comment("TC05_Tambah_Produk_Baru: Barang baru tersimpan dan jumlah barang bertambah satu."): TC05_Tambah_Produk_Baru: Barang baru tersimpan dan jumlah barang bertambah satu.
+
+16-10-2026T18:54:43 - [MESSAGE][INFO] - TC05_Tambah_Produk_Baru: Barang baru tersimpan dan jumlah barang bertambah satu.
+
+16-10-2026T18:54:43 - [TEST_STEP][PASSED] - CatalogScreen.openAdmin(): Tapped on element 'Object Repository/Jastipin/Catalog/btnOpenAdmin'
+
+16-10-2026T18:54:45 - [MESSAGE][PASSED] - Delayed 1 second(s)
+
+16-10-2026T18:54:47 - [MESSAGE][WARNING] - Element 'Object Repository/Jastipin/Catalog/btnOpenAdmin' not found (Root cause: com.kms.katalon.core.exception.StepFailedException: Element 'Object Repository/Jastipin/Catalog/btnOpenAdmin' not found
+	at com.kms.katalon.core.mobile.keyword.internal.MobileKeywordMain.stepFailed(MobileKeywordMain.groovy:65)
+	at com.kms.katalon.core.mobile.keyword.builtin.VerifyElementVisibleKeyword$_verifyElementVisible_closure1.doCall(VerifyElementVisibleKeyword.groovy:54)
+	at com.kms.katalon.core.mobile.keyword.builtin.VerifyElementVisibleKeyword$_verifyElementVisible_closure1.call(VerifyElementVisibleKeyword.groovy)
+	at com.kms.katalon.core.mobile.keyword.internal.MobileKeywordMain.runKeyword(MobileKeywordMain.groovy:30)
+	at com.kms.katalon.core.mobile.keyword.builtin.VerifyElementVisibleKeyword.verifyElementVisible(VerifyElementVisibleKeyword.groovy:57)
+	at com.kms.katalon.core.mobile.keyword.builtin.VerifyElementVisibleKeyword.execute(VerifyElementVisibleKeyword.groovy:36)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:106)
+	at com.kms.katalon.core.mobile.keyword.MobileBuiltInKeywords.verifyElementVisible(MobileBuiltInKeywords.groovy:2342)
+	at jastipin.MobileActions.terlihat(MobileActions.groovy:253)
+	at jastipin.MobileActions.scrollTo(MobileActions.groovy:206)
+	at jastipin.MobileActions.scrollToOrFail(MobileActions.groovy:315)
+	at jastipin.CatalogScreen.openAdmin(CatalogScreen.groovy:30)
+	at TC05_Tambah_Produk_Baru.run(TC05_Tambah_Produk_Baru:14)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:203)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:115)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:533)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:524)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:503)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:495)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:359)
+	at com.kms.katalon.core.common.CommonExecutor.accessTestCaseMainPhase(CommonExecutor.java:71)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:188)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:115)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:241)
+	at S1016_0.run(S1016_0.groovy:41)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+)
+
+16-10-2026T18:54:47 - [MESSAGE][PASSED] - Current device physical width is 1080
+
+16-10-2026T18:54:47 - [MESSAGE][PASSED] - Current device physical height is 2340
+
+16-10-2026T18:54:48 - [MESSAGE][PASSED] - Delayed 1 second(s)
+
+16-10-2026T18:54:48 - [MESSAGE][PASSED] - Element 'Object Repository/Jastipin/Catalog/btnOpenAdmin' is visible
+
+16-10-2026T18:54:48 - [MESSAGE][INFO] - Elemen terlihat setelah geser ke arah up
+
+16-10-2026T18:54:50 - [MESSAGE][PASSED] - Tapped on element 'Object Repository/Jastipin/Catalog/btnOpenAdmin'
+
+16-10-2026T18:54:50 - [TEST_STEP][PASSED] - AdminLoginScreen.loginAsAdmin(): Tapped on element 'Object Repository/Jastipin/AdminLogin/btnLogin'
+
+16-10-2026T18:54:52 - [MESSAGE][PASSED] - Text 'admin@jastipin.id' has been set to element 'Object Repository/Jastipin/AdminLogin/etAdminEmail'
+
+16-10-2026T18:54:53 - [MESSAGE][PASSED] - Text 'jastipin123' has been set to element 'Object Repository/Jastipin/AdminLogin/etAdminPassword'
+
+16-10-2026T18:54:53 - [MESSAGE][PASSED] - Tapped on element 'Object Repository/Jastipin/AdminLogin/btnLogin'
+
+16-10-2026T18:54:53 - [TEST_STEP][PASSED] - AdminHomeScreen.verifyVisible(): Element 'Object Repository/Jastipin/AdminHome/scrAdminHome' is exist
+
+16-10-2026T18:54:54 - [MESSAGE][PASSED] - Element 'Object Repository/Jastipin/AdminHome/scrAdminHome' is exist
+
+16-10-2026T18:54:54 - [TEST_STEP][PASSED] - AdminHomeScreen.verifyProductCount(G_MinProducts): Actual text and expected text of test object 'Object Repository/Jastipin/AdminHome/tvProductCount' are matched.
+
+16-10-2026T18:54:56 - [MESSAGE][PASSED] - Actual text and expected text of test object 'Object Repository/Jastipin/AdminHome/tvProductCount' are matched.
+
+16-10-2026T18:54:56 - [TEST_STEP][PASSED] - AdminHomeScreen.addProduct(): Tapped on element 'Object Repository/Jastipin/AdminHome/btnAddProduct'
+
+16-10-2026T18:54:56 - [MESSAGE][PASSED] - Tapped on element 'Object Repository/Jastipin/AdminHome/btnAddProduct'
+
+16-10-2026T18:54:56 - [TEST_STEP][PASSED] - ProductEditorScreen.verifyVisible(): Element 'Object Repository/Jastipin/Editor/scrProductEditor' is exist
+
+16-10-2026T18:54:57 - [MESSAGE][PASSED] - Element 'Object Repository/Jastipin/Editor/scrProductEditor' is exist
+
+16-10-2026T18:54:57 - [TEST_STEP][PASSED] - ProductEditorScreen.typeName("Barang Uji Otomasi"): Text 'Barang Uji Otomasi' has been set to element 'Object Repository/Jastipin/Editor/etProductName'
+
+16-10-2026T18:54:59 - [MESSAGE][PASSED] - Text 'Barang Uji Otomasi' has been set to element 'Object Repository/Jastipin/Editor/etProductName'
+
+16-10-2026T18:54:59 - [TEST_STEP][PASSED] - ProductEditorScreen.typePrice("150000"): Text '150000' has been set to element 'Object Repository/Jastipin/Editor/etProductPrice'
+
+16-10-2026T18:55:01 - [MESSAGE][PASSED] - Text '150000' has been set to element 'Object Repository/Jastipin/Editor/etProductPrice'
+
+16-10-2026T18:55:01 - [TEST_STEP][PASSED] - ProductEditorScreen.typeDescription("Ditambahkan oleh test case TC05."): Text 'Ditambahkan oleh test case TC05.' has been set to element 'Object Repository/Jastipin/Editor/etProductDescription'
+
+16-10-2026T18:55:02 - [MESSAGE][PASSED] - Text 'Ditambahkan oleh test case TC05.' has been set to element 'Object Repository/Jastipin/Editor/etProductDescription'
+
+16-10-2026T18:55:02 - [TEST_STEP][PASSED] - ProductEditorScreen.save(): Tapped on element 'Object Repository/Jastipin/Editor/btnSaveProduct'
+
+16-10-2026T18:55:04 - [MESSAGE][PASSED] - Keyboard is hidden
+
+16-10-2026T18:55:05 - [MESSAGE][PASSED] - Delayed 1 second(s)
+
+16-10-2026T18:55:05 - [MESSAGE][PASSED] - Element 'Object Repository/Jastipin/Editor/btnSaveProduct' is visible
+
+16-10-2026T18:55:05 - [MESSAGE][PASSED] - Tapped on element 'Object Repository/Jastipin/Editor/btnSaveProduct'
+
+16-10-2026T18:55:05 - [TEST_STEP][PASSED] - AdminHomeScreen.verifyVisible(): Element 'Object Repository/Jastipin/AdminHome/scrAdminHome' is exist
+
+16-10-2026T18:55:06 - [MESSAGE][PASSED] - Element 'Object Repository/Jastipin/AdminHome/scrAdminHome' is exist
+
+16-10-2026T18:55:06 - [TEST_STEP][PASSED] - AdminHomeScreen.verifyProductCount(G_MinProducts + 1): Actual text and expected text of test object 'Object Repository/Jastipin/AdminHome/tvProductCount' are matched.
+
+16-10-2026T18:55:06 - [MESSAGE][PASSED] - Actual text and expected text of test object 'Object Repository/Jastipin/AdminHome/tvProductCount' are matched.
+
+16-10-2026T18:55:06 - [TEST_STEP][PASSED] - MobileActions.takeScreenshot("TC05_setelah_tambah"): Screenshot is taken
+
+16-10-2026T18:55:07 - [MESSAGE][PASSED] - Screenshot is taken
+[[ATTACHMENT|artifacts\shot-TC05_setelah_tambah.png]]
+
+16-10-2026T18:55:07 - [TEST_STEP][PASSED] - Start listener action : afterTestCase: null
+
+16-10-2026T18:55:07 - [TEST_STEP][PASSED] - status = testCaseContext.getTestCaseStatus(): null
+
+16-10-2026T18:55:07 - [TEST_STEP][PASSED] - logInfo("Test case selesai: " + testCaseContext.getTestCaseId() + " status=" + status): Test case selesai: Test Cases/Smoke/TC05_Tambah_Produk_Baru status=PASSED
+
+16-10-2026T18:55:07 - [MESSAGE][INFO] - Test case selesai: Test Cases/Smoke/TC05_Tambah_Produk_Baru status=PASSED
+
+16-10-2026T18:55:07 - [TEST_STEP][PASSED] - if ("FAILED".equals(status) && G_ScreenshotOnFailure): null]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Smoke/TC06_Ubah_Nama_Produk" time="46.238" classname="Test Cases/Smoke/TC06_Ubah_Nama_Produk" status="PASSED">
+         <system-out><![CDATA[16-10-2026T18:55:07 - [TEST_CASE][PASSED] - Test Cases/Smoke/TC06_Ubah_Nama_Produk: Test Cases/Smoke/TC06_Ubah_Nama_Produk
+
+16-10-2026T18:55:07 - [TEST_STEP][PASSED] - Start listener action : beforeTestCase: Delayed 2 second(s)
+
+16-10-2026T18:55:07 - [TEST_STEP][PASSED] - logInfo("Test case dimulai: " + testCaseContext.getTestCaseId()): Test case dimulai: Test Cases/Smoke/TC06_Ubah_Nama_Produk
+
+16-10-2026T18:55:07 - [MESSAGE][INFO] - Test case dimulai: Test Cases/Smoke/TC06_Ubah_Nama_Produk
+
+16-10-2026T18:55:07 - [TEST_STEP][PASSED] - if (G_ResetDataBeforeEachCase): Delayed 2 second(s)
+
+16-10-2026T18:55:07 - [TEST_STEP][PASSED] - MobileActions.resetAndLaunch(): Delayed 2 second(s)
+
+16-10-2026T18:55:09 - [MESSAGE][PASSED] - Close app successfully
+
+16-10-2026T18:55:09 - [MESSAGE][INFO] - adb dipakai: C:\Users\user\.katalon\tools\android_sdk\platform-tools\adb.exe
+
+16-10-2026T18:55:09 - [MESSAGE][INFO] - pm clear com.fikri.jastipin -> Success
+
+16-10-2026T18:55:09 - [MESSAGE][INFO] - Detected NodeJS location: "C:\Program Files\nodejs\node.exe"
+
+16-10-2026T18:55:14 - [MESSAGE][INFO] - appium log: C:\Users\user\KatalonProjects\jastipin-mobile-automation\Reports\20261016_185140\Smoke_Suite\20261016_185144\appium.log
+
+16-10-2026T18:55:16 - [MESSAGE][INFO] - Appium server started on port 55,390
+
+16-10-2026T18:55:20 - [MESSAGE][WARNING] - Unable to get appium status. Root cause (Cannot invoke "com.google.gson.JsonObject.getAsJsonPrimitive(String)" because the return value of "com.google.gson.JsonObject.getAsJsonObject(String)" is null)
+
+16-10-2026T18:55:21 - [MESSAGE][PASSED] - Starting application with Id: 'com.fikri.jastipin'
+
+16-10-2026T18:55:27 - [MESSAGE][PASSED] - Delayed 2 second(s)
+
+16-10-2026T18:55:27 - [TEST_STEP][PASSED] - comment("TC06_Ubah_Nama_Produk: Perubahan nama barang tersimpan dan tampil di daftar."): TC06_Ubah_Nama_Produk: Perubahan nama barang tersimpan dan tampil di daftar.
+
+16-10-2026T18:55:27 - [MESSAGE][INFO] - TC06_Ubah_Nama_Produk: Perubahan nama barang tersimpan dan tampil di daftar.
+
+16-10-2026T18:55:27 - [TEST_STEP][PASSED] - CatalogScreen.openAdmin(): Tapped on element 'Object Repository/Jastipin/Catalog/btnOpenAdmin'
+
+16-10-2026T18:55:28 - [MESSAGE][PASSED] - Delayed 1 second(s)
+
+16-10-2026T18:55:30 - [MESSAGE][WARNING] - Element 'Object Repository/Jastipin/Catalog/btnOpenAdmin' not found (Root cause: com.kms.katalon.core.exception.StepFailedException: Element 'Object Repository/Jastipin/Catalog/btnOpenAdmin' not found
+	at com.kms.katalon.core.mobile.keyword.internal.MobileKeywordMain.stepFailed(MobileKeywordMain.groovy:65)
+	at com.kms.katalon.core.mobile.keyword.builtin.VerifyElementVisibleKeyword$_verifyElementVisible_closure1.doCall(VerifyElementVisibleKeyword.groovy:54)
+	at com.kms.katalon.core.mobile.keyword.builtin.VerifyElementVisibleKeyword$_verifyElementVisible_closure1.call(VerifyElementVisibleKeyword.groovy)
+	at com.kms.katalon.core.mobile.keyword.internal.MobileKeywordMain.runKeyword(MobileKeywordMain.groovy:30)
+	at com.kms.katalon.core.mobile.keyword.builtin.VerifyElementVisibleKeyword.verifyElementVisible(VerifyElementVisibleKeyword.groovy:57)
+	at com.kms.katalon.core.mobile.keyword.builtin.VerifyElementVisibleKeyword.execute(VerifyElementVisibleKeyword.groovy:36)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:106)
+	at com.kms.katalon.core.mobile.keyword.MobileBuiltInKeywords.verifyElementVisible(MobileBuiltInKeywords.groovy:2342)
+	at jastipin.MobileActions.terlihat(MobileActions.groovy:253)
+	at jastipin.MobileActions.scrollTo(MobileActions.groovy:206)
+	at jastipin.MobileActions.scrollToOrFail(MobileActions.groovy:315)
+	at jastipin.CatalogScreen.openAdmin(CatalogScreen.groovy:30)
+	at TC06_Ubah_Nama_Produk.run(TC06_Ubah_Nama_Produk:13)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:203)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:115)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:533)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:524)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:503)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:495)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:359)
+	at com.kms.katalon.core.common.CommonExecutor.accessTestCaseMainPhase(CommonExecutor.java:71)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:188)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:115)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:241)
+	at S1016_0.run(S1016_0.groovy:41)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+)
+
+16-10-2026T18:55:30 - [MESSAGE][PASSED] - Current device physical width is 1080
+
+16-10-2026T18:55:30 - [MESSAGE][PASSED] - Current device physical height is 2340
+
+16-10-2026T18:55:31 - [MESSAGE][PASSED] - Delayed 1 second(s)
+
+16-10-2026T18:55:32 - [MESSAGE][PASSED] - Element 'Object Repository/Jastipin/Catalog/btnOpenAdmin' is visible
+
+16-10-2026T18:55:32 - [MESSAGE][INFO] - Elemen terlihat setelah geser ke arah up
+
+16-10-2026T18:55:32 - [MESSAGE][PASSED] - Tapped on element 'Object Repository/Jastipin/Catalog/btnOpenAdmin'
+
+16-10-2026T18:55:32 - [TEST_STEP][PASSED] - AdminLoginScreen.loginAsAdmin(): Tapped on element 'Object Repository/Jastipin/AdminLogin/btnLogin'
+
+16-10-2026T18:55:35 - [MESSAGE][PASSED] - Text 'admin@jastipin.id' has been set to element 'Object Repository/Jastipin/AdminLogin/etAdminEmail'
+
+16-10-2026T18:55:36 - [MESSAGE][PASSED] - Text 'jastipin123' has been set to element 'Object Repository/Jastipin/AdminLogin/etAdminPassword'
+
+16-10-2026T18:55:37 - [MESSAGE][PASSED] - Tapped on element 'Object Repository/Jastipin/AdminLogin/btnLogin'
+
+16-10-2026T18:55:37 - [TEST_STEP][PASSED] - AdminHomeScreen.verifyVisible(): Element 'Object Repository/Jastipin/AdminHome/scrAdminHome' is exist
+
+16-10-2026T18:55:39 - [MESSAGE][PASSED] - Element 'Object Repository/Jastipin/AdminHome/scrAdminHome' is exist
+
+16-10-2026T18:55:39 - [TEST_STEP][PASSED] - AdminHomeScreen.editProduct(G_ProductIdFirst): Tapped on element 'btnEditProduct_945c758c-8859-4407-819d-12dd9fc464a6'
+
+16-10-2026T18:55:40 - [MESSAGE][PASSED] - Delayed 1 second(s)
+
+16-10-2026T18:55:40 - [MESSAGE][WARNING] - The input TestObject is not a MobileTestObject. Self-Healing is not supported
+
+16-10-2026T18:55:40 - [MESSAGE][PASSED] - Element 'btnEditProduct_945c758c-8859-4407-819d-12dd9fc464a6' is visible
+
+16-10-2026T18:55:40 - [MESSAGE][WARNING] - The input TestObject is not a MobileTestObject. Self-Healing is not supported
+
+16-10-2026T18:55:40 - [MESSAGE][PASSED] - Tapped on element 'btnEditProduct_945c758c-8859-4407-819d-12dd9fc464a6'
+
+16-10-2026T18:55:40 - [TEST_STEP][PASSED] - ProductEditorScreen.verifyVisible(): Element 'Object Repository/Jastipin/Editor/scrProductEditor' is exist
+
+16-10-2026T18:55:41 - [MESSAGE][PASSED] - Element 'Object Repository/Jastipin/Editor/scrProductEditor' is exist
+
+16-10-2026T18:55:41 - [TEST_STEP][PASSED] - namaBaru = "Tumbler Owala Freesip (Sudah Diubah)": null
+
+16-10-2026T18:55:41 - [TEST_STEP][PASSED] - ProductEditorScreen.typeName(namaBaru): Text 'Tumbler Owala Freesip (Sudah Diubah)' has been set to element 'Object Repository/Jastipin/Editor/etProductName'
+
+16-10-2026T18:55:42 - [MESSAGE][PASSED] - Text 'Tumbler Owala Freesip (Sudah Diubah)' has been set to element 'Object Repository/Jastipin/Editor/etProductName'
+
+16-10-2026T18:55:42 - [TEST_STEP][PASSED] - ProductEditorScreen.save(): Tapped on element 'Object Repository/Jastipin/Editor/btnSaveProduct'
+
+16-10-2026T18:55:46 - [MESSAGE][PASSED] - Keyboard is hidden
+
+16-10-2026T18:55:47 - [MESSAGE][PASSED] - Delayed 1 second(s)
+
+16-10-2026T18:55:49 - [MESSAGE][WARNING] - Element 'Object Repository/Jastipin/Editor/btnSaveProduct' not found (Root cause: com.kms.katalon.core.exception.StepFailedException: Element 'Object Repository/Jastipin/Editor/btnSaveProduct' not found
+	at com.kms.katalon.core.mobile.keyword.internal.MobileKeywordMain.stepFailed(MobileKeywordMain.groovy:65)
+	at com.kms.katalon.core.mobile.keyword.builtin.VerifyElementVisibleKeyword$_verifyElementVisible_closure1.doCall(VerifyElementVisibleKeyword.groovy:54)
+	at com.kms.katalon.core.mobile.keyword.builtin.VerifyElementVisibleKeyword$_verifyElementVisible_closure1.call(VerifyElementVisibleKeyword.groovy)
+	at com.kms.katalon.core.mobile.keyword.internal.MobileKeywordMain.runKeyword(MobileKeywordMain.groovy:30)
+	at com.kms.katalon.core.mobile.keyword.builtin.VerifyElementVisibleKeyword.verifyElementVisible(VerifyElementVisibleKeyword.groovy:57)
+	at com.kms.katalon.core.mobile.keyword.builtin.VerifyElementVisibleKeyword.execute(VerifyElementVisibleKeyword.groovy:36)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:106)
+	at com.kms.katalon.core.mobile.keyword.MobileBuiltInKeywords.verifyElementVisible(MobileBuiltInKeywords.groovy:2342)
+	at jastipin.MobileActions.terlihat(MobileActions.groovy:253)
+	at jastipin.MobileActions.scrollTo(MobileActions.groovy:206)
+	at jastipin.MobileActions.scrollToOrFail(MobileActions.groovy:315)
+	at jastipin.ProductEditorScreen.save(ProductEditorScreen.groovy:43)
+	at TC06_Ubah_Nama_Produk.run(TC06_Ubah_Nama_Produk:22)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:203)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:115)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:533)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:524)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:503)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:495)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:359)
+	at com.kms.katalon.core.common.CommonExecutor.accessTestCaseMainPhase(CommonExecutor.java:71)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:188)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:115)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:241)
+	at S1016_0.run(S1016_0.groovy:41)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+)
+
+16-10-2026T18:55:49 - [MESSAGE][PASSED] - Current device physical width is 1080
+
+16-10-2026T18:55:49 - [MESSAGE][PASSED] - Current device physical height is 2340
+
+16-10-2026T18:55:50 - [MESSAGE][PASSED] - Delayed 1 second(s)
+
+16-10-2026T18:55:51 - [MESSAGE][PASSED] - Element 'Object Repository/Jastipin/Editor/btnSaveProduct' is visible
+
+16-10-2026T18:55:51 - [MESSAGE][INFO] - Elemen terlihat setelah geser ke arah up
+
+16-10-2026T18:55:51 - [MESSAGE][PASSED] - Tapped on element 'Object Repository/Jastipin/Editor/btnSaveProduct'
+
+16-10-2026T18:55:51 - [TEST_STEP][PASSED] - AdminHomeScreen.verifyVisible(): Element 'Object Repository/Jastipin/AdminHome/scrAdminHome' is exist
+
+16-10-2026T18:55:53 - [MESSAGE][PASSED] - Element 'Object Repository/Jastipin/AdminHome/scrAdminHome' is exist
+
+16-10-2026T18:55:53 - [TEST_STEP][PASSED] - AdminHomeScreen.verifyRowName(G_ProductIdFirst, namaBaru): Actual text and expected text of test object 'tvRowName_945c758c-8859-4407-819d-12dd9fc464a6' are matched.
+
+16-10-2026T18:55:53 - [MESSAGE][WARNING] - The input TestObject is not a MobileTestObject. Self-Healing is not supported
+
+16-10-2026T18:55:53 - [MESSAGE][PASSED] - Actual text and expected text of test object 'tvRowName_945c758c-8859-4407-819d-12dd9fc464a6' are matched.
+
+16-10-2026T18:55:53 - [TEST_STEP][PASSED] - Start listener action : afterTestCase: null
+
+16-10-2026T18:55:53 - [TEST_STEP][PASSED] - status = testCaseContext.getTestCaseStatus(): null
+
+16-10-2026T18:55:53 - [TEST_STEP][PASSED] - logInfo("Test case selesai: " + testCaseContext.getTestCaseId() + " status=" + status): Test case selesai: Test Cases/Smoke/TC06_Ubah_Nama_Produk status=PASSED
+
+16-10-2026T18:55:53 - [MESSAGE][INFO] - Test case selesai: Test Cases/Smoke/TC06_Ubah_Nama_Produk status=PASSED
+
+16-10-2026T18:55:53 - [TEST_STEP][PASSED] - if ("FAILED".equals(status) && G_ScreenshotOnFailure): null]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Smoke/TC07_Hapus_Produk" time="40.003" classname="Test Cases/Smoke/TC07_Hapus_Produk" status="PASSED">
+         <system-out><![CDATA[16-10-2026T18:55:53 - [TEST_CASE][PASSED] - Test Cases/Smoke/TC07_Hapus_Produk: Test Cases/Smoke/TC07_Hapus_Produk
+
+16-10-2026T18:55:53 - [TEST_STEP][PASSED] - Start listener action : beforeTestCase: Delayed 2 second(s)
+
+16-10-2026T18:55:53 - [TEST_STEP][PASSED] - logInfo("Test case dimulai: " + testCaseContext.getTestCaseId()): Test case dimulai: Test Cases/Smoke/TC07_Hapus_Produk
+
+16-10-2026T18:55:53 - [MESSAGE][INFO] - Test case dimulai: Test Cases/Smoke/TC07_Hapus_Produk
+
+16-10-2026T18:55:53 - [TEST_STEP][PASSED] - if (G_ResetDataBeforeEachCase): Delayed 2 second(s)
+
+16-10-2026T18:55:53 - [TEST_STEP][PASSED] - MobileActions.resetAndLaunch(): Delayed 2 second(s)
+
+16-10-2026T18:55:55 - [MESSAGE][PASSED] - Close app successfully
+
+16-10-2026T18:55:55 - [MESSAGE][INFO] - adb dipakai: C:\Users\user\.katalon\tools\android_sdk\platform-tools\adb.exe
+
+16-10-2026T18:55:55 - [MESSAGE][INFO] - pm clear com.fikri.jastipin -> Success
+
+16-10-2026T18:55:56 - [MESSAGE][INFO] - Detected NodeJS location: "C:\Program Files\nodejs\node.exe"
+
+16-10-2026T18:56:00 - [MESSAGE][INFO] - appium log: C:\Users\user\KatalonProjects\jastipin-mobile-automation\Reports\20261016_185140\Smoke_Suite\20261016_185144\appium.log
+
+16-10-2026T18:56:03 - [MESSAGE][INFO] - Appium server started on port 55,559
+
+16-10-2026T18:56:07 - [MESSAGE][WARNING] - Unable to get appium status. Root cause (Cannot invoke "com.google.gson.JsonObject.getAsJsonPrimitive(String)" because the return value of "com.google.gson.JsonObject.getAsJsonObject(String)" is null)
+
+16-10-2026T18:56:07 - [MESSAGE][PASSED] - Starting application with Id: 'com.fikri.jastipin'
+
+16-10-2026T18:56:13 - [MESSAGE][PASSED] - Delayed 2 second(s)
+
+16-10-2026T18:56:13 - [TEST_STEP][PASSED] - comment("TC07_Hapus_Produk: Menghapus barang mengurangi jumlahnya dan barisnya hilang."): TC07_Hapus_Produk: Menghapus barang mengurangi jumlahnya dan barisnya hilang.
+
+16-10-2026T18:56:13 - [MESSAGE][INFO] - TC07_Hapus_Produk: Menghapus barang mengurangi jumlahnya dan barisnya hilang.
+
+16-10-2026T18:56:13 - [TEST_STEP][PASSED] - CatalogScreen.openAdmin(): Tapped on element 'Object Repository/Jastipin/Catalog/btnOpenAdmin'
+
+16-10-2026T18:56:14 - [MESSAGE][PASSED] - Delayed 1 second(s)
+
+16-10-2026T18:56:16 - [MESSAGE][WARNING] - Element 'Object Repository/Jastipin/Catalog/btnOpenAdmin' not found (Root cause: com.kms.katalon.core.exception.StepFailedException: Element 'Object Repository/Jastipin/Catalog/btnOpenAdmin' not found
+	at com.kms.katalon.core.mobile.keyword.internal.MobileKeywordMain.stepFailed(MobileKeywordMain.groovy:65)
+	at com.kms.katalon.core.mobile.keyword.builtin.VerifyElementVisibleKeyword$_verifyElementVisible_closure1.doCall(VerifyElementVisibleKeyword.groovy:54)
+	at com.kms.katalon.core.mobile.keyword.builtin.VerifyElementVisibleKeyword$_verifyElementVisible_closure1.call(VerifyElementVisibleKeyword.groovy)
+	at com.kms.katalon.core.mobile.keyword.internal.MobileKeywordMain.runKeyword(MobileKeywordMain.groovy:30)
+	at com.kms.katalon.core.mobile.keyword.builtin.VerifyElementVisibleKeyword.verifyElementVisible(VerifyElementVisibleKeyword.groovy:57)
+	at com.kms.katalon.core.mobile.keyword.builtin.VerifyElementVisibleKeyword.execute(VerifyElementVisibleKeyword.groovy:36)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:106)
+	at com.kms.katalon.core.mobile.keyword.MobileBuiltInKeywords.verifyElementVisible(MobileBuiltInKeywords.groovy:2342)
+	at jastipin.MobileActions.terlihat(MobileActions.groovy:253)
+	at jastipin.MobileActions.scrollTo(MobileActions.groovy:206)
+	at jastipin.MobileActions.scrollToOrFail(MobileActions.groovy:315)
+	at jastipin.CatalogScreen.openAdmin(CatalogScreen.groovy:30)
+	at TC07_Hapus_Produk.run(TC07_Hapus_Produk:13)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:203)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:115)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:533)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:524)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:503)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:495)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:359)
+	at com.kms.katalon.core.common.CommonExecutor.accessTestCaseMainPhase(CommonExecutor.java:71)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:188)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:115)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:241)
+	at S1016_0.run(S1016_0.groovy:41)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+)
+
+16-10-2026T18:56:17 - [MESSAGE][PASSED] - Current device physical width is 1080
+
+16-10-2026T18:56:17 - [MESSAGE][PASSED] - Current device physical height is 2340
+
+16-10-2026T18:56:18 - [MESSAGE][PASSED] - Delayed 1 second(s)
+
+16-10-2026T18:56:18 - [MESSAGE][PASSED] - Element 'Object Repository/Jastipin/Catalog/btnOpenAdmin' is visible
+
+16-10-2026T18:56:18 - [MESSAGE][INFO] - Elemen terlihat setelah geser ke arah up
+
+16-10-2026T18:56:19 - [MESSAGE][PASSED] - Tapped on element 'Object Repository/Jastipin/Catalog/btnOpenAdmin'
+
+16-10-2026T18:56:19 - [TEST_STEP][PASSED] - AdminLoginScreen.loginAsAdmin(): Tapped on element 'Object Repository/Jastipin/AdminLogin/btnLogin'
+
+16-10-2026T18:56:20 - [MESSAGE][PASSED] - Text 'admin@jastipin.id' has been set to element 'Object Repository/Jastipin/AdminLogin/etAdminEmail'
+
+16-10-2026T18:56:23 - [MESSAGE][PASSED] - Text 'jastipin123' has been set to element 'Object Repository/Jastipin/AdminLogin/etAdminPassword'
+
+16-10-2026T18:56:23 - [MESSAGE][PASSED] - Tapped on element 'Object Repository/Jastipin/AdminLogin/btnLogin'
+
+16-10-2026T18:56:23 - [TEST_STEP][PASSED] - AdminHomeScreen.verifyVisible(): Element 'Object Repository/Jastipin/AdminHome/scrAdminHome' is exist
+
+16-10-2026T18:56:24 - [MESSAGE][PASSED] - Element 'Object Repository/Jastipin/AdminHome/scrAdminHome' is exist
+
+16-10-2026T18:56:24 - [TEST_STEP][PASSED] - AdminHomeScreen.verifyProductCount(G_MinProducts): Actual text and expected text of test object 'Object Repository/Jastipin/AdminHome/tvProductCount' are matched.
+
+16-10-2026T18:56:25 - [MESSAGE][PASSED] - Actual text and expected text of test object 'Object Repository/Jastipin/AdminHome/tvProductCount' are matched.
+
+16-10-2026T18:56:25 - [TEST_STEP][PASSED] - AdminHomeScreen.deleteProduct(G_ProductIdFirst): Tapped on element 'btnDeleteProduct_945c758c-8859-4407-819d-12dd9fc464a6'
+
+16-10-2026T18:56:27 - [MESSAGE][PASSED] - Delayed 1 second(s)
+
+16-10-2026T18:56:27 - [MESSAGE][WARNING] - The input TestObject is not a MobileTestObject. Self-Healing is not supported
+
+16-10-2026T18:56:27 - [MESSAGE][PASSED] - Element 'btnDeleteProduct_945c758c-8859-4407-819d-12dd9fc464a6' is visible
+
+16-10-2026T18:56:27 - [MESSAGE][WARNING] - The input TestObject is not a MobileTestObject. Self-Healing is not supported
+
+16-10-2026T18:56:27 - [MESSAGE][PASSED] - Tapped on element 'btnDeleteProduct_945c758c-8859-4407-819d-12dd9fc464a6'
+
+16-10-2026T18:56:27 - [TEST_STEP][PASSED] - delay(1): Delayed 1 second(s)
+
+16-10-2026T18:56:28 - [MESSAGE][PASSED] - Delayed 1 second(s)
+
+16-10-2026T18:56:28 - [TEST_STEP][PASSED] - AdminHomeScreen.verifyProductCount(G_MinProducts - 1): Actual text and expected text of test object 'Object Repository/Jastipin/AdminHome/tvProductCount' are matched.
+
+16-10-2026T18:56:28 - [MESSAGE][PASSED] - Actual text and expected text of test object 'Object Repository/Jastipin/AdminHome/tvProductCount' are matched.
+
+16-10-2026T18:56:28 - [TEST_STEP][PASSED] - verifyElementNotExist(Jastipin.rowProduct(G_ProductIdFirst), G_ShortTimeOut): Element 'rowProduct_945c758c-8859-4407-819d-12dd9fc464a6' not found
+
+16-10-2026T18:56:28 - [MESSAGE][WARNING] - The input TestObject is not a MobileTestObject. Self-Healing is not supported
+
+16-10-2026T18:56:33 - [MESSAGE][PASSED] - Element 'rowProduct_945c758c-8859-4407-819d-12dd9fc464a6' not found
+
+16-10-2026T18:56:33 - [TEST_STEP][PASSED] - Start listener action : afterTestCase: null
+
+16-10-2026T18:56:33 - [TEST_STEP][PASSED] - status = testCaseContext.getTestCaseStatus(): null
+
+16-10-2026T18:56:33 - [TEST_STEP][PASSED] - logInfo("Test case selesai: " + testCaseContext.getTestCaseId() + " status=" + status): Test case selesai: Test Cases/Smoke/TC07_Hapus_Produk status=PASSED
+
+16-10-2026T18:56:33 - [MESSAGE][INFO] - Test case selesai: Test Cases/Smoke/TC07_Hapus_Produk status=PASSED
+
+16-10-2026T18:56:33 - [TEST_STEP][PASSED] - if ("FAILED".equals(status) && G_ScreenshotOnFailure): null]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Smoke/TC08_Simpan_Pengaturan" time="44.71" classname="Test Cases/Smoke/TC08_Simpan_Pengaturan" status="PASSED">
+         <system-out><![CDATA[16-10-2026T18:56:33 - [TEST_CASE][PASSED] - Test Cases/Smoke/TC08_Simpan_Pengaturan: Test Cases/Smoke/TC08_Simpan_Pengaturan
+
+16-10-2026T18:56:33 - [TEST_STEP][PASSED] - Start listener action : beforeTestCase: Delayed 2 second(s)
+
+16-10-2026T18:56:33 - [TEST_STEP][PASSED] - logInfo("Test case dimulai: " + testCaseContext.getTestCaseId()): Test case dimulai: Test Cases/Smoke/TC08_Simpan_Pengaturan
+
+16-10-2026T18:56:33 - [MESSAGE][INFO] - Test case dimulai: Test Cases/Smoke/TC08_Simpan_Pengaturan
+
+16-10-2026T18:56:33 - [TEST_STEP][PASSED] - if (G_ResetDataBeforeEachCase): Delayed 2 second(s)
+
+16-10-2026T18:56:33 - [TEST_STEP][PASSED] - MobileActions.resetAndLaunch(): Delayed 2 second(s)
+
+16-10-2026T18:56:35 - [MESSAGE][PASSED] - Close app successfully
+
+16-10-2026T18:56:35 - [MESSAGE][INFO] - adb dipakai: C:\Users\user\.katalon\tools\android_sdk\platform-tools\adb.exe
+
+16-10-2026T18:56:35 - [MESSAGE][INFO] - pm clear com.fikri.jastipin -> Success
+
+16-10-2026T18:56:35 - [MESSAGE][INFO] - Detected NodeJS location: "C:\Program Files\nodejs\node.exe"
+
+16-10-2026T18:56:40 - [MESSAGE][INFO] - appium log: C:\Users\user\KatalonProjects\jastipin-mobile-automation\Reports\20261016_185140\Smoke_Suite\20261016_185144\appium.log
+
+16-10-2026T18:56:42 - [MESSAGE][INFO] - Appium server started on port 55,713
+
+16-10-2026T18:56:46 - [MESSAGE][WARNING] - Unable to get appium status. Root cause (Cannot invoke "com.google.gson.JsonObject.getAsJsonPrimitive(String)" because the return value of "com.google.gson.JsonObject.getAsJsonObject(String)" is null)
+
+16-10-2026T18:56:46 - [MESSAGE][PASSED] - Starting application with Id: 'com.fikri.jastipin'
+
+16-10-2026T18:56:53 - [MESSAGE][PASSED] - Delayed 2 second(s)
+
+16-10-2026T18:56:53 - [TEST_STEP][PASSED] - comment("TC08_Simpan_Pengaturan: Pengaturan toko tersimpan dan aplikasi memberi konfirmasi."): TC08_Simpan_Pengaturan: Pengaturan toko tersimpan dan aplikasi memberi konfirmasi.
+
+16-10-2026T18:56:53 - [MESSAGE][INFO] - TC08_Simpan_Pengaturan: Pengaturan toko tersimpan dan aplikasi memberi konfirmasi.
+
+16-10-2026T18:56:53 - [TEST_STEP][PASSED] - CatalogScreen.openAdmin(): Tapped on element 'Object Repository/Jastipin/Catalog/btnOpenAdmin'
+
+16-10-2026T18:56:54 - [MESSAGE][PASSED] - Delayed 1 second(s)
+
+16-10-2026T18:56:56 - [MESSAGE][WARNING] - Element 'Object Repository/Jastipin/Catalog/btnOpenAdmin' not found (Root cause: com.kms.katalon.core.exception.StepFailedException: Element 'Object Repository/Jastipin/Catalog/btnOpenAdmin' not found
+	at com.kms.katalon.core.mobile.keyword.internal.MobileKeywordMain.stepFailed(MobileKeywordMain.groovy:65)
+	at com.kms.katalon.core.mobile.keyword.builtin.VerifyElementVisibleKeyword$_verifyElementVisible_closure1.doCall(VerifyElementVisibleKeyword.groovy:54)
+	at com.kms.katalon.core.mobile.keyword.builtin.VerifyElementVisibleKeyword$_verifyElementVisible_closure1.call(VerifyElementVisibleKeyword.groovy)
+	at com.kms.katalon.core.mobile.keyword.internal.MobileKeywordMain.runKeyword(MobileKeywordMain.groovy:30)
+	at com.kms.katalon.core.mobile.keyword.builtin.VerifyElementVisibleKeyword.verifyElementVisible(VerifyElementVisibleKeyword.groovy:57)
+	at com.kms.katalon.core.mobile.keyword.builtin.VerifyElementVisibleKeyword.execute(VerifyElementVisibleKeyword.groovy:36)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:106)
+	at com.kms.katalon.core.mobile.keyword.MobileBuiltInKeywords.verifyElementVisible(MobileBuiltInKeywords.groovy:2342)
+	at jastipin.MobileActions.terlihat(MobileActions.groovy:253)
+	at jastipin.MobileActions.scrollTo(MobileActions.groovy:206)
+	at jastipin.MobileActions.scrollToOrFail(MobileActions.groovy:315)
+	at jastipin.CatalogScreen.openAdmin(CatalogScreen.groovy:30)
+	at TC08_Simpan_Pengaturan.run(TC08_Simpan_Pengaturan:13)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:203)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:115)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:533)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:524)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:503)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:495)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:359)
+	at com.kms.katalon.core.common.CommonExecutor.accessTestCaseMainPhase(CommonExecutor.java:71)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:188)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:115)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:241)
+	at S1016_0.run(S1016_0.groovy:41)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+)
+
+16-10-2026T18:56:56 - [MESSAGE][PASSED] - Current device physical width is 1080
+
+16-10-2026T18:56:56 - [MESSAGE][PASSED] - Current device physical height is 2340
+
+16-10-2026T18:56:57 - [MESSAGE][PASSED] - Delayed 1 second(s)
+
+16-10-2026T18:56:58 - [MESSAGE][PASSED] - Element 'Object Repository/Jastipin/Catalog/btnOpenAdmin' is visible
+
+16-10-2026T18:56:58 - [MESSAGE][INFO] - Elemen terlihat setelah geser ke arah up
+
+16-10-2026T18:56:58 - [MESSAGE][PASSED] - Tapped on element 'Object Repository/Jastipin/Catalog/btnOpenAdmin'
+
+16-10-2026T18:56:58 - [TEST_STEP][PASSED] - AdminLoginScreen.loginAsAdmin(): Tapped on element 'Object Repository/Jastipin/AdminLogin/btnLogin'
+
+16-10-2026T18:57:00 - [MESSAGE][PASSED] - Text 'admin@jastipin.id' has been set to element 'Object Repository/Jastipin/AdminLogin/etAdminEmail'
+
+16-10-2026T18:57:02 - [MESSAGE][PASSED] - Text 'jastipin123' has been set to element 'Object Repository/Jastipin/AdminLogin/etAdminPassword'
+
+16-10-2026T18:57:03 - [MESSAGE][PASSED] - Tapped on element 'Object Repository/Jastipin/AdminLogin/btnLogin'
+
+16-10-2026T18:57:03 - [TEST_STEP][PASSED] - AdminHomeScreen.verifyVisible(): Element 'Object Repository/Jastipin/AdminHome/scrAdminHome' is exist
+
+16-10-2026T18:57:05 - [MESSAGE][PASSED] - Element 'Object Repository/Jastipin/AdminHome/scrAdminHome' is exist
+
+16-10-2026T18:57:05 - [TEST_STEP][PASSED] - AdminHomeScreen.openSettings(): Tapped on element 'Object Repository/Jastipin/AdminHome/btnSettings'
+
+16-10-2026T18:57:05 - [MESSAGE][PASSED] - Tapped on element 'Object Repository/Jastipin/AdminHome/btnSettings'
+
+16-10-2026T18:57:05 - [TEST_STEP][PASSED] - SettingsScreen.verifyVisible(): Element 'Object Repository/Jastipin/Settings/scrSettings' is exist
+
+16-10-2026T18:57:06 - [MESSAGE][PASSED] - Element 'Object Repository/Jastipin/Settings/scrSettings' is exist
+
+16-10-2026T18:57:06 - [TEST_STEP][PASSED] - SettingsScreen.typeField("heroLead", "cek dulu baru checkout"): Text 'cek dulu baru checkout' has been set to element 'et_heroLead'
+
+16-10-2026T18:57:08 - [MESSAGE][PASSED] - Delayed 1 second(s)
+
+16-10-2026T18:57:08 - [MESSAGE][WARNING] - The input TestObject is not a MobileTestObject. Self-Healing is not supported
+
+16-10-2026T18:57:08 - [MESSAGE][PASSED] - Element 'et_heroLead' is visible
+
+16-10-2026T18:57:08 - [MESSAGE][WARNING] - The input TestObject is not a MobileTestObject. Self-Healing is not supported
+
+16-10-2026T18:57:10 - [MESSAGE][PASSED] - Text 'cek dulu baru checkout' has been set to element 'et_heroLead'
+
+16-10-2026T18:57:10 - [TEST_STEP][PASSED] - SettingsScreen.save(): Tapped on element 'Object Repository/Jastipin/Settings/btnSaveSettings'
+
+16-10-2026T18:57:12 - [MESSAGE][PASSED] - Keyboard is hidden
+
+16-10-2026T18:57:13 - [MESSAGE][PASSED] - Delayed 1 second(s)
+
+16-10-2026T18:57:15 - [MESSAGE][WARNING] - Element 'Object Repository/Jastipin/Settings/btnSaveSettings' not found (Root cause: com.kms.katalon.core.exception.StepFailedException: Element 'Object Repository/Jastipin/Settings/btnSaveSettings' not found
+	at com.kms.katalon.core.mobile.keyword.internal.MobileKeywordMain.stepFailed(MobileKeywordMain.groovy:65)
+	at com.kms.katalon.core.mobile.keyword.builtin.VerifyElementVisibleKeyword$_verifyElementVisible_closure1.doCall(VerifyElementVisibleKeyword.groovy:54)
+	at com.kms.katalon.core.mobile.keyword.builtin.VerifyElementVisibleKeyword$_verifyElementVisible_closure1.call(VerifyElementVisibleKeyword.groovy)
+	at com.kms.katalon.core.mobile.keyword.internal.MobileKeywordMain.runKeyword(MobileKeywordMain.groovy:30)
+	at com.kms.katalon.core.mobile.keyword.builtin.VerifyElementVisibleKeyword.verifyElementVisible(VerifyElementVisibleKeyword.groovy:57)
+	at com.kms.katalon.core.mobile.keyword.builtin.VerifyElementVisibleKeyword.execute(VerifyElementVisibleKeyword.groovy:36)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:106)
+	at com.kms.katalon.core.mobile.keyword.MobileBuiltInKeywords.verifyElementVisible(MobileBuiltInKeywords.groovy:2342)
+	at jastipin.MobileActions.terlihat(MobileActions.groovy:253)
+	at jastipin.MobileActions.scrollTo(MobileActions.groovy:206)
+	at jastipin.MobileActions.scrollToOrFail(MobileActions.groovy:315)
+	at jastipin.SettingsScreen.save(SettingsScreen.groovy:57)
+	at TC08_Simpan_Pengaturan.run(TC08_Simpan_Pengaturan:21)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:203)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:115)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:533)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:524)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:503)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:495)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:359)
+	at com.kms.katalon.core.common.CommonExecutor.accessTestCaseMainPhase(CommonExecutor.java:71)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:188)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:115)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:241)
+	at S1016_0.run(S1016_0.groovy:41)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+)
+
+16-10-2026T18:57:15 - [MESSAGE][PASSED] - Current device physical width is 1080
+
+16-10-2026T18:57:15 - [MESSAGE][PASSED] - Current device physical height is 2340
+
+16-10-2026T18:57:16 - [MESSAGE][PASSED] - Delayed 1 second(s)
+
+16-10-2026T18:57:16 - [MESSAGE][PASSED] - Element 'Object Repository/Jastipin/Settings/btnSaveSettings' is visible
+
+16-10-2026T18:57:16 - [MESSAGE][INFO] - Elemen terlihat setelah geser ke arah up
+
+16-10-2026T18:57:17 - [MESSAGE][PASSED] - Tapped on element 'Object Repository/Jastipin/Settings/btnSaveSettings'
+
+16-10-2026T18:57:17 - [TEST_STEP][PASSED] - SettingsScreen.verifySaved(): Actual text and expected text of test object 'Object Repository/Jastipin/Settings/tvSettingsStatus' are matched.
+
+16-10-2026T18:57:17 - [MESSAGE][PASSED] - Actual text and expected text of test object 'Object Repository/Jastipin/Settings/tvSettingsStatus' are matched.
+
+16-10-2026T18:57:17 - [TEST_STEP][PASSED] - MobileActions.takeScreenshot("TC08_pengaturan"): Screenshot is taken
+
+16-10-2026T18:57:18 - [MESSAGE][PASSED] - Screenshot is taken
+[[ATTACHMENT|artifacts\shot-TC08_pengaturan.png]]
+
+16-10-2026T18:57:18 - [TEST_STEP][PASSED] - Start listener action : afterTestCase: null
+
+16-10-2026T18:57:18 - [TEST_STEP][PASSED] - status = testCaseContext.getTestCaseStatus(): null
+
+16-10-2026T18:57:18 - [TEST_STEP][PASSED] - logInfo("Test case selesai: " + testCaseContext.getTestCaseId() + " status=" + status): Test case selesai: Test Cases/Smoke/TC08_Simpan_Pengaturan status=PASSED
+
+16-10-2026T18:57:18 - [MESSAGE][INFO] - Test case selesai: Test Cases/Smoke/TC08_Simpan_Pengaturan status=PASSED
+
+16-10-2026T18:57:18 - [TEST_STEP][PASSED] - if ("FAILED".equals(status) && G_ScreenshotOnFailure): null]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Smoke/TC09_Admin_Keluar_Kembali_Katalog" time="33.197" classname="Test Cases/Smoke/TC09_Admin_Keluar_Kembali_Katalog" status="PASSED">
+         <system-out><![CDATA[16-10-2026T18:57:18 - [TEST_CASE][PASSED] - Test Cases/Smoke/TC09_Admin_Keluar_Kembali_Katalog: Test Cases/Smoke/TC09_Admin_Keluar_Kembali_Katalog
+
+16-10-2026T18:57:18 - [TEST_STEP][PASSED] - Start listener action : beforeTestCase: Delayed 2 second(s)
+
+16-10-2026T18:57:18 - [TEST_STEP][PASSED] - logInfo("Test case dimulai: " + testCaseContext.getTestCaseId()): Test case dimulai: Test Cases/Smoke/TC09_Admin_Keluar_Kembali_Katalog
+
+16-10-2026T18:57:18 - [MESSAGE][INFO] - Test case dimulai: Test Cases/Smoke/TC09_Admin_Keluar_Kembali_Katalog
+
+16-10-2026T18:57:18 - [TEST_STEP][PASSED] - if (G_ResetDataBeforeEachCase): Delayed 2 second(s)
+
+16-10-2026T18:57:18 - [TEST_STEP][PASSED] - MobileActions.resetAndLaunch(): Delayed 2 second(s)
+
+16-10-2026T18:57:20 - [MESSAGE][PASSED] - Close app successfully
+
+16-10-2026T18:57:20 - [MESSAGE][INFO] - adb dipakai: C:\Users\user\.katalon\tools\android_sdk\platform-tools\adb.exe
+
+16-10-2026T18:57:20 - [MESSAGE][INFO] - pm clear com.fikri.jastipin -> Success
+
+16-10-2026T18:57:20 - [MESSAGE][INFO] - Detected NodeJS location: "C:\Program Files\nodejs\node.exe"
+
+16-10-2026T18:57:25 - [MESSAGE][INFO] - appium log: C:\Users\user\KatalonProjects\jastipin-mobile-automation\Reports\20261016_185140\Smoke_Suite\20261016_185144\appium.log
+
+16-10-2026T18:57:27 - [MESSAGE][INFO] - Appium server started on port 55,893
+
+16-10-2026T18:57:31 - [MESSAGE][WARNING] - Unable to get appium status. Root cause (Cannot invoke "com.google.gson.JsonObject.getAsJsonPrimitive(String)" because the return value of "com.google.gson.JsonObject.getAsJsonObject(String)" is null)
+
+16-10-2026T18:57:31 - [MESSAGE][PASSED] - Starting application with Id: 'com.fikri.jastipin'
+
+16-10-2026T18:57:38 - [MESSAGE][PASSED] - Delayed 2 second(s)
+
+16-10-2026T18:57:38 - [TEST_STEP][PASSED] - comment("TC09_Admin_Keluar_Kembali_Katalog: Keluar dari sesi admin mengembalikan ke katalog."): TC09_Admin_Keluar_Kembali_Katalog: Keluar dari sesi admin mengembalikan ke katalog.
+
+16-10-2026T18:57:38 - [MESSAGE][INFO] - TC09_Admin_Keluar_Kembali_Katalog: Keluar dari sesi admin mengembalikan ke katalog.
+
+16-10-2026T18:57:38 - [TEST_STEP][PASSED] - CatalogScreen.openAdmin(): Tapped on element 'Object Repository/Jastipin/Catalog/btnOpenAdmin'
+
+16-10-2026T18:57:39 - [MESSAGE][PASSED] - Delayed 1 second(s)
+
+16-10-2026T18:57:41 - [MESSAGE][WARNING] - Element 'Object Repository/Jastipin/Catalog/btnOpenAdmin' not found (Root cause: com.kms.katalon.core.exception.StepFailedException: Element 'Object Repository/Jastipin/Catalog/btnOpenAdmin' not found
+	at com.kms.katalon.core.mobile.keyword.internal.MobileKeywordMain.stepFailed(MobileKeywordMain.groovy:65)
+	at com.kms.katalon.core.mobile.keyword.builtin.VerifyElementVisibleKeyword$_verifyElementVisible_closure1.doCall(VerifyElementVisibleKeyword.groovy:54)
+	at com.kms.katalon.core.mobile.keyword.builtin.VerifyElementVisibleKeyword$_verifyElementVisible_closure1.call(VerifyElementVisibleKeyword.groovy)
+	at com.kms.katalon.core.mobile.keyword.internal.MobileKeywordMain.runKeyword(MobileKeywordMain.groovy:30)
+	at com.kms.katalon.core.mobile.keyword.builtin.VerifyElementVisibleKeyword.verifyElementVisible(VerifyElementVisibleKeyword.groovy:57)
+	at com.kms.katalon.core.mobile.keyword.builtin.VerifyElementVisibleKeyword.execute(VerifyElementVisibleKeyword.groovy:36)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:106)
+	at com.kms.katalon.core.mobile.keyword.MobileBuiltInKeywords.verifyElementVisible(MobileBuiltInKeywords.groovy:2342)
+	at jastipin.MobileActions.terlihat(MobileActions.groovy:253)
+	at jastipin.MobileActions.scrollTo(MobileActions.groovy:206)
+	at jastipin.MobileActions.scrollToOrFail(MobileActions.groovy:315)
+	at jastipin.CatalogScreen.openAdmin(CatalogScreen.groovy:30)
+	at TC09_Admin_Keluar_Kembali_Katalog.run(TC09_Admin_Keluar_Kembali_Katalog:11)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:203)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:115)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:533)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:524)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:503)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:495)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:359)
+	at com.kms.katalon.core.common.CommonExecutor.accessTestCaseMainPhase(CommonExecutor.java:71)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:188)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:115)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:241)
+	at S1016_0.run(S1016_0.groovy:41)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+)
+
+16-10-2026T18:57:41 - [MESSAGE][PASSED] - Current device physical width is 1080
+
+16-10-2026T18:57:41 - [MESSAGE][PASSED] - Current device physical height is 2340
+
+16-10-2026T18:57:42 - [MESSAGE][PASSED] - Delayed 1 second(s)
+
+16-10-2026T18:57:43 - [MESSAGE][PASSED] - Element 'Object Repository/Jastipin/Catalog/btnOpenAdmin' is visible
+
+16-10-2026T18:57:43 - [MESSAGE][INFO] - Elemen terlihat setelah geser ke arah up
+
+16-10-2026T18:57:43 - [MESSAGE][PASSED] - Tapped on element 'Object Repository/Jastipin/Catalog/btnOpenAdmin'
+
+16-10-2026T18:57:43 - [TEST_STEP][PASSED] - AdminLoginScreen.loginAsAdmin(): Tapped on element 'Object Repository/Jastipin/AdminLogin/btnLogin'
+
+16-10-2026T18:57:45 - [MESSAGE][PASSED] - Text 'admin@jastipin.id' has been set to element 'Object Repository/Jastipin/AdminLogin/etAdminEmail'
+
+16-10-2026T18:57:47 - [MESSAGE][PASSED] - Text 'jastipin123' has been set to element 'Object Repository/Jastipin/AdminLogin/etAdminPassword'
+
+16-10-2026T18:57:48 - [MESSAGE][PASSED] - Tapped on element 'Object Repository/Jastipin/AdminLogin/btnLogin'
+
+16-10-2026T18:57:48 - [TEST_STEP][PASSED] - AdminHomeScreen.verifyVisible(): Element 'Object Repository/Jastipin/AdminHome/scrAdminHome' is exist
+
+16-10-2026T18:57:49 - [MESSAGE][PASSED] - Element 'Object Repository/Jastipin/AdminHome/scrAdminHome' is exist
+
+16-10-2026T18:57:49 - [TEST_STEP][PASSED] - AdminHomeScreen.logout(): Tapped on element 'Object Repository/Jastipin/AdminHome/btnLogout'
+
+16-10-2026T18:57:50 - [MESSAGE][PASSED] - Tapped on element 'Object Repository/Jastipin/AdminHome/btnLogout'
+
+16-10-2026T18:57:50 - [TEST_STEP][PASSED] - CatalogScreen.verifyVisible(): Element 'Object Repository/Jastipin/Catalog/scrCatalog' is exist
+
+16-10-2026T18:57:51 - [MESSAGE][PASSED] - Element 'Object Repository/Jastipin/Catalog/scrCatalog' is exist
+
+16-10-2026T18:57:51 - [TEST_STEP][PASSED] - Start listener action : afterTestCase: null
+
+16-10-2026T18:57:51 - [TEST_STEP][PASSED] - status = testCaseContext.getTestCaseStatus(): null
+
+16-10-2026T18:57:51 - [TEST_STEP][PASSED] - logInfo("Test case selesai: " + testCaseContext.getTestCaseId() + " status=" + status): Test case selesai: Test Cases/Smoke/TC09_Admin_Keluar_Kembali_Katalog status=PASSED
+
+16-10-2026T18:57:51 - [MESSAGE][INFO] - Test case selesai: Test Cases/Smoke/TC09_Admin_Keluar_Kembali_Katalog status=PASSED
+
+16-10-2026T18:57:51 - [TEST_STEP][PASSED] - if ("FAILED".equals(status) && G_ScreenshotOnFailure): null]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <system-out><![CDATA[16-10-2026T18:51:51 - [TEST_STEP][PASSED] - Start listener action : beforeTestSuite: Suite dimulai: Test Suites/Smoke_Suite
+
+16-10-2026T18:51:51 - [TEST_STEP][PASSED] - logInfo("Suite dimulai: " + testSuiteContext.getTestSuiteId()): Suite dimulai: Test Suites/Smoke_Suite
+
+16-10-2026T18:51:51 - [MESSAGE][INFO] - Suite dimulai: Test Suites/Smoke_Suite
+
+16-10-2026T18:51:51 - [TEST_SUITE][PASSED] - Smoke_Suite: null]]></system-out>
+      <system-err><![CDATA[]]></system-err>
+   </testsuite>
+</testsuites>
