@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Email yang tidak terdaftar ditolak.</description>
+   <name>TC13_Login_Email_Tidak_Terdaftar</name>
+   <tag></tag>
+   <comment>Given layar masuk admin tampil
+When email tidak terdaftar diisi dengan password benar
+Then pesan bahwa kredensial admin salah muncul</comment>
+   <testCaseGuid>b491a1db-d1d5-5594-95b3-54badfec099a</testCaseGuid>
+</TestCaseEntity>

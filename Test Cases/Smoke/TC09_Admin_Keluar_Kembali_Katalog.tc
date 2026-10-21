@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Keluar dari sesi admin mengembalikan ke katalog.</description>
+   <name>TC09_Admin_Keluar_Kembali_Katalog</name>
+   <tag></tag>
+   <comment>Given admin sudah masuk
+When tombol keluar ditekan
+Then katalog tampil kembali</comment>
+   <testCaseGuid>bf6e19c5-81a0-5f5e-8204-1c520451910a</testCaseGuid>
+</TestCaseEntity>

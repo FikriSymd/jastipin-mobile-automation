@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalVariableEntities>
+   <description>Variabel tingkat proyek. Profil eksekusi menimpa nilai di sini.</description>
+   <name>GlobalVariables</name>
+   <tag></tag>
+   <defaultProfile>false</defaultProfile>
+</GlobalVariableEntities>

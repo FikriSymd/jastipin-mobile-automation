@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Daftar admin melaporkan jumlah barang yang benar.</description>
+   <name>TC19_Admin_Jumlah_Barang</name>
+   <tag></tag>
+   <comment>Given admin sudah masuk
+When layar kelola barang tampil
+Then tertulis delapan barang, sesuai data bawaan</comment>
+   <testCaseGuid>c0ecd9e0-6dbf-56c1-b9d6-dbd298b4be3d</testCaseGuid>
+</TestCaseEntity>

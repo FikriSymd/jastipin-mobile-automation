@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Kredensial admin yang benar membuka layar kelola barang.</description>
+   <name>TC04_Admin_Login_Berhasil</name>
+   <tag></tag>
+   <comment>Given katalog tampil
+When tombol masuk admin ditekan dan kredensial benar diisi
+Then layar kelola barang terbuka dan menampilkan email admin yang sedang masuk</comment>
+   <testCaseGuid>2a0236af-25fe-5985-a231-9f34702d12db</testCaseGuid>
+</TestCaseEntity>

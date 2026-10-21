@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Menghapus barang mengurangi jumlahnya dan barisnya hilang.</description>
+   <name>TC07_Hapus_Produk</name>
+   <tag></tag>
+   <comment>Given admin sudah masuk dan ada delapan barang
+When barang pertama dihapus
+Then jumlahnya menjadi tujuh dan baris barang itu tidak ada lagi</comment>
+   <testCaseGuid>1d362dfd-6d2a-51fe-88d4-cbe287af6e9a</testCaseGuid>
+</TestCaseEntity>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Menghapus satu foto memberi konfirmasi di editor.</description>
+   <name>TC22_Admin_Hapus_Satu_Foto</name>
+   <tag></tag>
+   <comment>Given admin membuka editor barang yang punya foto
+When tombol hapus pada foto pertama ditekan
+Then muncul pesan bahwa foto dihapus</comment>
+   <testCaseGuid>70fa70fd-ff80-5975-b7de-f96a45146584</testCaseGuid>
+</TestCaseEntity>

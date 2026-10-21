@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalVariableEntities>
+   <description>Profil eksekusi bawaan</description>
+   <name>default</name>
+   <tag></tag>
+   <defaultProfile>true</defaultProfile>
+   <GlobalVariableEntity>
+      <description>Jalur APK relatif terhadap proyek. Dipakai kalau aplikasi belum terpasang</description>
+      <initValue>'apk/Jastipin-debug.apk'</initValue>
+      <name>G_AppPath</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description>Nama paket aplikasi yang diuji</description>
+      <initValue>'com.fikri.jastipin'</initValue>
+      <name>G_AppPackage</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description>Batas tunggu bawaan dalam detik</description>
+      <initValue>20</initValue>
+      <name>G_Timeout</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description>Batas tunggu singkat untuk elemen yang seharusnya sudah tampil</description>
+      <initValue>5</initValue>
+      <name>G_ShortTimeOut</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description>Email admin yang diterima aplikasi</description>
+      <initValue>'admin@jastipin.id'</initValue>
+      <name>G_AdminEmail</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description>Password admin yang diterima aplikasi</description>
+      <initValue>'jastipin123'</initValue>
+      <name>G_AdminPassword</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description>Email admin kedua</description>
+      <initValue>'staf@jastipin.id'</initValue>
+      <name>G_StaffEmail</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description>Password salah untuk kasus negatif</description>
+      <initValue>'jastipin999'</initValue>
+      <name>G_WrongPassword</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description>Password sembilan karakter, di bawah batas minimal</description>
+      <initValue>'123456789'</initValue>
+      <name>G_ShortPassword</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description>Email yang tidak terdaftar</description>
+      <initValue>'bukanadmin@jastipin.id'</initValue>
+      <name>G_UnknownEmail</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description>Pesan validasi saat salah satu kolom login kosong</description>
+      <initValue>'Email dan password wajib diisi.'</initValue>
+      <name>G_ExpectedEmptyLogin</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description>Pesan validasi saat password kurang dari 10 karakter</description>
+      <initValue>'Password minimal 10 karakter.'</initValue>
+      <name>G_ExpectedShortPassword</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description>Pesan validasi saat kredensial tidak cocok</description>
+      <initValue>'Email atau password admin salah.'</initValue>
+      <name>G_ExpectedWrongCredential</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description>Pesan validasi saat nama barang kosong</description>
+      <initValue>'Nama barang wajib diisi.'</initValue>
+      <name>G_ExpectedEmptyName</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description>Pesan validasi saat harga kosong</description>
+      <initValue>'Harga wajib diisi.'</initValue>
+      <name>G_ExpectedEmptyPrice</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description>Pesan validasi saat foto melebihi batas</description>
+      <initValue>'Maksimal 8 foto per produk.'</initValue>
+      <name>G_ExpectedMaxImages</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description>Pesan setelah pengaturan berhasil disimpan</description>
+      <initValue>'Pengaturan disimpan.'</initValue>
+      <name>G_ExpectedSettingsSaved</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description>Jumlah barang bawaan data awal aplikasi</description>
+      <initValue>8</initValue>
+      <name>G_MinProducts</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description>Nomor WhatsApp contoh. Ganti dengan nomor toko yang benar-benar terpasang di aplikasi sebelum menjalankan TC24</description>
+      <initValue>'6281234567890'</initValue>
+      <name>G_WhatsappNumber</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description>Barang urutan pertama, tujuh foto</description>
+      <initValue>'945c758c-8859-4407-819d-12dd9fc464a6'</initValue>
+      <name>G_ProductIdFirst</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description>Nama barang urutan pertama</description>
+      <initValue>'Tumbler Owala Freesip (Warna Polos)'</initValue>
+      <name>G_ProductNameFirst</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description>Barang dengan delapan foto, dipakai menguji batas unggah</description>
+      <initValue>'682cec96-ec80-4f48-9e12-a9f61ea0e12f'</initValue>
+      <name>G_ProductIdMaxImages</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description>Barang urutan kelima, dipakai menguji gulir</description>
+      <initValue>'3e682be1-a482-49e6-af95-47e8cbb09c9c'</initValue>
+      <name>G_ProductIdFifth</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description>Nama barang urutan kelima</description>
+      <initValue>'Stanley Tenteng 30oz/887ml'</initValue>
+      <name>G_ProductNameFifth</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description>Kosongkan data aplikasi sebelum tiap test case supaya hasilnya bisa diulang</description>
+      <initValue>true</initValue>
+      <name>G_ResetDataBeforeEachCase</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description>Ambil tangkapan layar otomatis saat test case gagal</description>
+      <initValue>true</initValue>
+      <name>G_ScreenshotOnFailure</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description>Perangkat yang dipakai. Informatif saja, pemilihan sebenarnya dari dropdown Katalon</description>
+      <initValue>'emulator-5554'</initValue>
+      <name>G_DeviceName</name>
+   </GlobalVariableEntity>
+</GlobalVariableEntities>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Tiga barang ditambahkan dari satu berkas data dan jumlahnya naik bertahap.</description>
+   <name>TC26_Tambah_Produk_Data_Driven</name>
+   <tag></tag>
+   <comment>Given berkas ProductCases berisi tiga barang
+When tiap baris ditambahkan lewat editor
+Then jumlah barang naik satu setiap baris, dari delapan sampai sebelas</comment>
+   <testCaseGuid>56944cf6-f5e5-5a75-89a4-9144ae3cdbbd</testCaseGuid>
+</TestCaseEntity>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Tombol galeri mengganti foto tanpa meninggalkan layar detail.</description>
+   <name>TC03_Galeri_Tombol_Berikutnya</name>
+   <tag></tag>
+   <comment>Given layar detail barang pertama terbuka
+When tombol Berikutnya lalu Sebelumnya ditekan
+Then layar detail tetap tampil dan nama barang tidak berubah</comment>
+   <testCaseGuid>3e1a14ec-47b3-5330-bbdc-e7ef4dc095b9</testCaseGuid>
+</TestCaseEntity>

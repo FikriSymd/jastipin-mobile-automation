@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Barang yang fotonya sudah delapan tidak bisa ditambah lagi.</description>
+   <name>TC17_Produk_Melebihi_Batas_Foto</name>
+   <tag></tag>
+   <comment>Given admin membuka barang yang sudah punya delapan foto
+When tombol tambah foto ditekan
+Then pesan bahwa maksimal delapan foto muncul</comment>
+   <testCaseGuid>2eefbb92-fd83-5155-9806-d8ce5fab1feb</testCaseGuid>
+</TestCaseEntity>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Menyimpan pengaturan memberi pesan konfirmasi.</description>
+   <name>TC23_Pengaturan_Konfirmasi_Simpan</name>
+   <tag></tag>
+   <comment>Given admin membuka pengaturan toko
+When catatan footer diubah lalu disimpan
+Then muncul pesan bahwa pengaturan disimpan</comment>
+   <testCaseGuid>f6104944-59ae-5f34-b0c0-81e5bd44728c</testCaseGuid>
+</TestCaseEntity>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Perubahan nama barang tersimpan dan tampil di daftar.</description>
+   <name>TC06_Ubah_Nama_Produk</name>
+   <tag></tag>
+   <comment>Given admin sudah masuk
+When nama barang pertama diubah lalu disimpan
+Then daftar menampilkan nama yang baru</comment>
+   <testCaseGuid>961675f7-fb9e-57e3-9400-aa6c598601a2</testCaseGuid>
+</TestCaseEntity>

@@ -1,0 +1,7 @@
+email,password,expectedError
+"","","Email dan password wajib diisi."
+"admin@jastipin.id","123456789","Password minimal 10 karakter."
+"admin@jastipin.id","jastipin999","Email atau password admin salah."
+"bukanadmin@jastipin.id","jastipin123","Email atau password admin salah."
+"","jastipin123","Email dan password wajib diisi."
+"admin@jastipin.id","jastipin123",""

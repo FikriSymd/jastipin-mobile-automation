@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Pengaturan toko tersimpan dan aplikasi memberi konfirmasi.</description>
+   <name>TC08_Simpan_Pengaturan</name>
+   <tag></tag>
+   <comment>Given admin sudah masuk
+When kalimat hero diubah lalu pengaturan disimpan
+Then muncul pesan bahwa pengaturan tersimpan</comment>
+   <testCaseGuid>f2e3ffb2-21ef-58c5-afb3-a4380f9aa748</testCaseGuid>
+</TestCaseEntity>

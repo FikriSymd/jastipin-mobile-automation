@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Muat ulang tidak mengubah data yang sudah ada.</description>
+   <name>TC20_Admin_Muat_Ulang</name>
+   <tag></tag>
+   <comment>Given admin sudah masuk dan jumlah barang terbaca
+When tombol muat ulang ditekan
+Then jumlah barang tetap sama</comment>
+   <testCaseGuid>a95141fa-e550-5368-b636-94799a4c8f06</testCaseGuid>
+</TestCaseEntity>

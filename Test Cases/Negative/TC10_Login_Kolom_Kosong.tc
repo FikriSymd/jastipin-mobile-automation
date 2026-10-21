@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Menekan Masuk tanpa mengisi apa pun ditolak.</description>
+   <name>TC10_Login_Kolom_Kosong</name>
+   <tag></tag>
+   <comment>Given layar masuk admin tampil
+When tombol Masuk ditekan tanpa mengisi kolom
+Then pesan bahwa email dan password wajib diisi muncul dan user tetap di layar masuk</comment>
+   <testCaseGuid>a6fa6fbe-b57d-5ae0-bad0-9d14e97f20c3</testCaseGuid>
+</TestCaseEntity>

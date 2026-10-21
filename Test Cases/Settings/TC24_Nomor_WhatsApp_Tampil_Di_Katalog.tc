@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Nomor WhatsApp dari pengaturan tampil utuh di katalog.</description>
+   <name>TC24_Nomor_WhatsApp_Tampil_Di_Katalog</name>
+   <tag></tag>
+   <comment>Given katalog tampil
+When blok kontak dicapai
+Then nomor yang tampil sama dengan nomor pada pengaturan toko</comment>
+   <testCaseGuid>8c51b087-f4ec-52a8-afa8-675cead1a130</testCaseGuid>
+</TestCaseEntity>

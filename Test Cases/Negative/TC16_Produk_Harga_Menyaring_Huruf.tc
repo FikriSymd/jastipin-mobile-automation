@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Kolom harga membuang karakter selain angka.</description>
+   <name>TC16_Produk_Harga_Menyaring_Huruf</name>
+   <tag></tag>
+   <comment>Given admin sudah masuk di editor barang baru
+When teks berisi huruf dan angka diketik ke kolom harga
+Then kolom hanya menyisakan angkanya</comment>
+   <testCaseGuid>4424965b-97d6-5683-b65d-89e9275fe1f2</testCaseGuid>
+</TestCaseEntity>

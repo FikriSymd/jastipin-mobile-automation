@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Barang baru tersimpan dan jumlah barang bertambah satu.</description>
+   <name>TC05_Tambah_Produk_Baru</name>
+   <tag></tag>
+   <comment>Given admin sudah masuk
+When barang baru diisi nama dan harganya lalu disimpan
+Then kembali ke daftar barang dan jumlahnya bertambah satu</comment>
+   <testCaseGuid>dff0f4d3-7365-5d9c-b130-8f0be34cd11e</testCaseGuid>
+</TestCaseEntity>

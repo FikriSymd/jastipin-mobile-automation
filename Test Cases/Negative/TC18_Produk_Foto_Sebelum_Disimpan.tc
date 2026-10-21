@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Barang baru harus disimpan dulu sebelum bisa diberi foto.</description>
+   <name>TC18_Produk_Foto_Sebelum_Disimpan</name>
+   <tag></tag>
+   <comment>Given admin membuka editor barang baru yang belum disimpan
+When layar editor tampil
+Then muncul keterangan bahwa produk harus disimpan lebih dulu</comment>
+   <testCaseGuid>ddfd9f29-9758-5dad-8773-d124e12aa311</testCaseGuid>
+</TestCaseEntity>

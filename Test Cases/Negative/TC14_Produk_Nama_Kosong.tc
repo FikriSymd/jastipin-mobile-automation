@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Barang tanpa nama tidak bisa disimpan.</description>
+   <name>TC14_Produk_Nama_Kosong</name>
+   <tag></tag>
+   <comment>Given admin sudah masuk di editor barang baru
+When harga diisi tapi nama dibiarkan kosong lalu disimpan
+Then pesan bahwa nama barang wajib diisi muncul dan user tetap di editor</comment>
+   <testCaseGuid>f87bcaff-5e4d-527a-b3c2-b0a0b5f444b3</testCaseGuid>
+</TestCaseEntity>

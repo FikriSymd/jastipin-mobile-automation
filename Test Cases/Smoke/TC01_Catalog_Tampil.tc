@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Katalog terbaca penuh dari atas sampai bawah.</description>
+   <name>TC01_Catalog_Tampil</name>
+   <tag></tag>
+   <comment>Given aplikasi Jastipin baru dibuka
+When katalog dimuat lalu digulir sampai dasar
+Then kalimat hero terisi, seluruh delapan barang bawaan terpasang berurutan, dan blok cara pesan, kontak, catatan kaki, serta tombol masuk admin tercapai</comment>
+   <testCaseGuid>acff6d2b-45f6-54f9-98f5-7060aa5b135e</testCaseGuid>
+</TestCaseEntity>

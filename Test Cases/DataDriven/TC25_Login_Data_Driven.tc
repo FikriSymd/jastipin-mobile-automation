@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Enam kombinasi login diuji dari satu berkas data.</description>
+   <name>TC25_Login_Data_Driven</name>
+   <tag></tag>
+   <comment>Given berkas LoginCases berisi enam kombinasi email, password, dan pesan yang diharapkan
+When tiap baris dijalankan bergantian
+Then tiap baris menghasilkan pesan sesuai harapannya, dan baris tanpa pesan berhasil masuk</comment>
+   <testCaseGuid>255aabc5-6858-520d-9f99-664c8939a777</testCaseGuid>
+</TestCaseEntity>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Menekan kartu barang membuka detail dengan nama yang sesuai.</description>
+   <name>TC02_Buka_Detail_Produk</name>
+   <tag></tag>
+   <comment>Given katalog tampil
+When kartu barang pertama ditekan
+Then layar detail terbuka dan menampilkan nama barang itu, lalu tombol kembali mengembalikan ke katalog</comment>
+   <testCaseGuid>1a69fedf-8793-58d0-a598-44df3cea50a6</testCaseGuid>
+</TestCaseEntity>

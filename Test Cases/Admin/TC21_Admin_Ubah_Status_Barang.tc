@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Mengubah status barang menjadi disembunyikan.</description>
+   <name>TC21_Admin_Ubah_Status_Barang</name>
+   <tag></tag>
+   <comment>Given admin membuka editor barang pertama
+When status diubah menjadi Sembunyikan lalu disimpan
+Then daftar menandai barang itu sebagai disembunyikan</comment>
+   <testCaseGuid>edf0c484-8d2a-5398-bfd8-c5bbd3eedf06</testCaseGuid>
+</TestCaseEntity>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Project>
+   <description>Portfolio project: Android mobile UI automation of a self-built catalogue app (com.fikri.jastipin) migrated from a website. Katalon Studio, scripting-first.</description>
+   <name>Jastipin Mobile Automation</name>
+   <tag></tag>
+   <UUID>b2934396-de07-54b1-8897-cdd7f55521d3</UUID>
+   <migratedVersion>5.4.0</migratedVersion>
+   <pageLoadTimeout>0</pageLoadTimeout>
+</Project>
